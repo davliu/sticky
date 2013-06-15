@@ -8,5 +8,6 @@ stickyApp.config(function($routeProvider) {
   when("/", {controller: "HomeCtrl", templateUrl: "home.html"}).
   when("/profile", {controller: "ProfileCtrl", templateUrl: "profile.html"}).
   when("/dashboard", {controller: "DashboardCtrl", templateUrl: "dashboard.html"}).
+  when("/vote/:competitionName", {controller: "VoteCtrl", templateUrl: "vote.html"}).
   when("/company_create", {controller: "CompanyCtrl", templateUrl: "company.html"});
 });
