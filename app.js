@@ -1,4 +1,6 @@
 var stickyApp = angular.module('stickyApp', ['firebase']);
+var sticky = sticky || {};
+sticky.firebase = new Firebase("companies.firebaseIO.com");
 
 stickyApp.config(function($routeProvider) {
   $routeProvider. 
