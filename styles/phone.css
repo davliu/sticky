@@ -2,7 +2,7 @@
   display:none;
 }
 
-#mobile-menu{ 
+#mobile-menu{
   display: block;
   position: fixed; left: 0; top: 0;
   width: 100%;
@@ -20,6 +20,10 @@
   height: 140px;
 }
 
+
+.company-box img {
+  max-height: 90px;
+}
 
 .evernote-btn {
   display: block;
