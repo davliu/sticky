@@ -75,8 +75,8 @@
       ],
       "endsIn": "14 hours",
       "finished": false,
-      "statistics": [
-        "age": [
+      "statistics": {
+        "age": {
           "0-18": 12,
           "19-25": 28,
           "25-30": 31,
@@ -84,20 +84,20 @@
           "40-50": 18,
           "50-60": 12,
           "60+": 22
-        ],
-        "gender": [
+        },
+        "gender": {
           "male": 80,
           "female":85 
-        ],
-        "location": [
+        },
+        "location": {
           "Mountain View, CA": 41,
           "Sunnyvale, CA": 35,
           "Burlingame, CA": 26,
           "San Mateo, CA": 14,
           "Palo Alto, CA": 22,
           "San Francisco, CA": 27
-        ]
-      ]
+        }
+      }
     },
     {
       "name": "Best Restaurant in Nor-Cal",
@@ -112,8 +112,8 @@
       ],
       "endsIn": "5 days, 8 hours",
       "finished": false,
-      "statistics": [
-        "age": [
+      "statistics": {
+        "age": {
           "0-18": 82,
           "19-25": 98,
           "25-30": 176,
@@ -121,20 +121,20 @@
           "40-50": 128,
           "50-60": 120,
           "60+": 45
-        ],
-        "gender": [
+        },
+        "gender": {
           "male": 281,
           "female": 505
-        ],
-        "location": [
+        },
+        "location": {
           "Mountain View, CA": 111,
           "Sunnyvale, CA": 89,
           "Burlingame, CA": 76,
           "San Mateo, CA": 112,
           "Palo Alto, CA": 136,
           "San Francisco, CA": 265
-        ]
-      ]
+        }
+      }
     },
     {
       "name": "Best Chinese Restaurant in Bay Area",
@@ -149,8 +149,8 @@
       ],
       "endsIn": "12 days, 9 hours",
       "finished": false,
-      "statistics": [
-        "age": [
+      "statistics": {
+        "age": {
           "0-18": 82,
           "19-25": 150,
           "25-30": 176,
@@ -158,20 +158,20 @@
           "40-50": 188,
           "50-60": 120,
           "60+": 51
-        ],
-        "gender": [
+        },
+        "gender": {
           "male": 671,
           "female": 336
-        ],
-        "location": [
+        },
+        "location": {
           "Mountain View, CA": 211,
           "Sunnyvale, CA": 129,
           "Burlingame, CA": 76,
           "San Mateo, CA": 112,
           "Palo Alto, CA": 136,
           "San Francisco, CA": 343
-        ]
-      ]
+        }
+      }
     }
   ]
 }
