@@ -115,7 +115,7 @@ h1,h2,h3,h4,h5 {
   position: absolute;
   right: 18px;
   top: 2px;
-  z-index: 999;
+  z-index: 90;
 }
 
 .voted-box {
