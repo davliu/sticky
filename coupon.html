@@ -1,15 +1,18 @@
+<div class="alert-box success row" ng-show="flash.get().length">
+  {{flash.get()}}
+</div>
 
 <div class="row">
 
   <ul>
     <li class="large-12 columns page-title"> Coupons </li>
-    <li class="small-4 large-3 columns" ng-repeat="coupon in coupons">
-      <div>
+    <li class="small-6 large-3 columns" ng-repeat="coupon in coupons">
+      <div class="company-box" >
       	<span class="coupon-title">{{coupon.provider}}</span>
       	<img src="{{coupon.photo}}">
       	<a class="evernote-btn" href="" ng-click="sendToEverNote(coupon)"></a>
       </div>
-      
+
     </li>
   </ul>
 </div>

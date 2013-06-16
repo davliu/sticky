@@ -1,7 +1,9 @@
 var sticky = sticky || {};
 
-stickyApp.controller('CouponCtrl', function CouponCtrl($scope, $routeParams, angularFire, $http) {
+stickyApp.controller('CouponCtrl', function CouponCtrl($scope, $routeParams, angularFire, $http, flash) {
   
+  $scope.flash = flash;
+
   angularFire(sticky.coupons, $scope, "coupons").then(function(coupons) {
     $scope.coupons = coupons;
   });
