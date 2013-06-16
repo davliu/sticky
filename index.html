@@ -13,6 +13,7 @@
     <script src="scripts/libs/angularfire.min.js"></script>
     <script type="text/javascript" src="scripts/libs/foundation.min.js"></script>
     <script type="text/javascript" src="https://api.intel.com:8081/js/v1/intel.cloudservices.js"></script>
+    <script type="text/javascript" data-app-id="habPxzWob50jsZYoCMN7aw" src="https://assets.yammer.com/platform/yam.js"></script>
   </head>
 
   <body ng-controller="IndexCtrl">
@@ -25,19 +26,22 @@
       <li><a href="#/trending">Trending</a></li>
       <li><a href="#/profile">Profile</a></li>
       <li><a href="#/dashboard">Dashboard</a></li>
-      <li><a href="#/company">Company</a></li>
+      <li><a href="#/companies">Companies</a></li>
       <li><a href="#/maps">Discover</a></li>
+      <li><span id="yammer-login"></span></li>
+      <script>
+        yam.connect.loginButton('#yammer-login', function (resp) {
+          if (resp.authResponse) {
+            document.getElementById('yammer-login').innerHTML = 'Yammer! Logined';
+          }
+        }); 
+      </script>
       <a href="" ng-click="switchIdStatus()">Sign {{getIdStatus()}}</a>
     </ul>
 
   </div>
   <div id="main-content">
-    <div ng-view> </div>
-    <!-- <div id="map-view">
-      <div id="intel-map"></div>
-      <input id="map-searchbox" type="text" placeholder="Search">
-       <div id="map-searchbox"></div>
-    </div> -->
+    <div style="height: 100%;" ng-view> </div>
   </div>
 
   </body>
@@ -54,6 +58,7 @@
   <script src="controllers/TrendingController.js"></script>
   <script src="controllers/MapController.js"></script>
   <script src="factories/flash.js"></script>
+  <script src="factories/intelmap.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
   <script src="controllers/IndexController.js"></script>
 </html>
