@@ -1,38 +1,45 @@
 {
   "companies": [
     {
+      "geodata": [37.402111, -122.078803],
       "name": "Jack in the Box",
-      "photo": "http://3.bp.blogspot.com/_mhHzlHCfJ2M/TMmukni5J8I/AAAAAAAABt4/9s60Wdi-Su8/s1600/JackInTheBoxLogo.png"
+      "photo": "images/JackInTheBoxLogo.png"
     },
     {
       "name": "Sean in the Box",
       "photo": "http://s3.amazonaws.com/cmusv-rails-production/people/photo/805/profile/001_XiaoXiao.jpg"
     },
     {
+      "geodata": [37.3903337, -122.0934948],
       "name": "Chipotle",
       "photo": "http://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Chipotle_Mexican_Grill_logo.svg/200px-Chipotle_Mexican_Grill_logo.svg.png"
     },
     {
+      "geodata": [37.394306, -122.078532],
       "name": "Fu Lam Mum",
-      "photo": "http://media-cdn.tripadvisor.com/media/photo-s/03/2e/54/ab/fu-lam-mum.jpg"
+      "photo": "images/fu-lam-mum.png"
     },
     {
       "name": "Cooking Papa",
-      "photo": "http://www.mycookingpapa.com/CP.jpg"
+      "photo": "images/CookingPapa.png"
     }
+
   ],
 
   "items": [
     {
       "name": "Jack's Big Stack",
+      "photo": "images/Jacks-Big-Stack.png",
       "company": 0
     },
     {
       "name": "Sirloin Cheeseburger",
+      "photo": "images/Sirloin-Cheeseburger.png",
       "company": 0
     },
     {
       "name": "Grilled Chicken Salad",
+      "photo": "images/GrilledChickenSalad.png",
       "company": 0
     },
     {
@@ -41,11 +48,30 @@
     }
   ],
 
+  "coupons": [
+    {
+      "provider": "Jack in the Box",
+      "photo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkLBMOzRZLlFx-F1-7jcfbUqhmgsFHJ-O_5vibnjmc_ugWh_JapA"
+    },
+    {
+      "provider": "Jack in the Box",
+      "photo": "http://3.bp.blogspot.com/_EA90Ak61ioY/SxVmMz-wKoI/AAAAAAAAByg/rgHeVOvgESU/s1600/JACK_FREESourdoughJack.jpg"
+    },
+    {
+      "provider": "Jack in the Box",
+      "photo": "http://3.bp.blogspot.com/_EA90Ak61ioY/SxVmMz-wKoI/AAAAAAAAByg/rgHeVOvgESU/s1600/JACK_FREESourdoughJack.jpg"
+    },
+    {
+      "provider": "Chipotle",
+      "photo": "http://3.bp.blogspot.com/_EA90Ak61ioY/SxVmMz-wKoI/AAAAAAAAByg/rgHeVOvgESU/s1600/JACK_FREESourdoughJack.jpg"
+    }
+  ],
+
   "competitions": [
     {
       "name": "Best Meal in Chipotle",
       "photo": "http://i.huffpost.com/gen/332205/thumbs/s-CHIPOTLE-MENU-large300.jpg",
-      "category": "food",
+      "category": "Food",
       "type": "items",
       "competitors": [
         0, 1, 2
@@ -53,12 +79,36 @@
       "votes": [
         42, 84, 39
       ],
-      "finished": true
+      "endsIn": "14 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 12,
+          "19-25": 28,
+          "25-30": 31,
+          "30-40": 42,
+          "40-50": 18,
+          "50-60": 12,
+          "60+": 22
+        },
+        "gender": {
+          "male": 80,
+          "female": 85
+        },
+        "location": {
+          "Mountain View, CA": 41,
+          "Sunnyvale, CA": 35,
+          "Burlingame, CA": 26,
+          "San Mateo, CA": 14,
+          "Palo Alto, CA": 22,
+          "San Francisco, CA": 27
+        }
+      }
     },
     {
       "name": "Best Restaurant in Nor-Cal",
       "photo": "http://www.ciiwa.com/images/panera.jpg",
-      "category": "food",
+      "category": "Food",
       "type": "company",
       "competitors": [
         0, 1, 2, 3
@@ -66,12 +116,36 @@
       "votes": [
         322, 122, 134, 211
       ],
-      "finished": false
+      "endsIn": "5 days, 8 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 98,
+          "25-30": 176,
+          "30-40": 140,
+          "40-50": 128,
+          "50-60": 120,
+          "60+": 45
+        },
+        "gender": {
+          "male": 281,
+          "female": 505
+        },
+        "location": {
+          "Mountain View, CA": 111,
+          "Sunnyvale, CA": 89,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 265
+        }
+      }
     },
     {
       "name": "Best Chinese Restaurant in Bay Area",
-      "photo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCkJ9hmr0JYbNt8sK-hMZRlETclLtf9Rr21_tt6zjiYEjgMvi9Ww",
-      "category": "food",
+      "photo": "images/chinese-restaurant.png",
+      "category": "Food",
       "type": "company",
       "competitors": [
         3, 4
@@ -79,7 +153,31 @@
       "votes": [
         885, 122
       ],
-      "finished": true
+      "endsIn": "12 days, 9 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 150,
+          "25-30": 176,
+          "30-40": 240,
+          "40-50": 188,
+          "50-60": 120,
+          "60+": 51
+        },
+        "gender": {
+          "male": 671,
+          "female": 336
+        },
+        "location": {
+          "Mountain View, CA": 211,
+          "Sunnyvale, CA": 129,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 343
+        }
+      }
     }
   ]
 }

@@ -9,6 +9,7 @@ body { height: 100%; position: relative; overflow: hidden; background-image:url(
   text-align: right; z-index: 5;
 }
 
+#mobile-menu{ display: none; }
 
 #main-menu #menu-logo{
   color: #ddd;
@@ -39,5 +40,73 @@ body { height: 100%; position: relative; overflow: hidden; background-image:url(
 }
 
 .row {
-  margin-top: 1.5em;
+  margin-top: 2em;
+}
+
+.page-title {
+  font-family: 'Lily Script One', cursive;
+  font-size: 2.2em;
+  padding: 0 0.3em;
+  margin-bottom: 1em;
+}
+
+.company-title {
+  text-align: center;
+}
+
+.voting-box {
+  min-height: 400px;
+}
+
+.company-box {
+  position: relative;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 0 1.2em 0;
+  border: 1px solid #333;
+  opacity: 0.95;
+  box-shadow: 3px 3px 10px 1px #999;
+}
+.company-box:hover {
+  opacity: 1;
+}
+
+.company-name {
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  font-weight: 700;
+  opacity: 0.95;
+}
+
+.item {
+  width: 220px;
+  margin: 10px;
+  float: left;
+}
+
+
+.coupon-title {
+  text-align: center;
+  display: block;
+}
+
+.evernote-btn {
+  display: block;
+  background-image: url("../evernote.png");
+  height: 40px;
+  width: 183px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.voted-box {
+  color: white;
+}
+
+.competition-description {
+  text-align: center;
 }
