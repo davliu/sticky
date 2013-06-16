@@ -71,19 +71,35 @@
   "coupons": [
     {
       "provider": "Jack in the Box",
-      "photo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkLBMOzRZLlFx-F1-7jcfbUqhmgsFHJ-O_5vibnjmc_ugWh_JapA"
+      "photo": "images/jb1.jpeg"
     },
     {
       "provider": "Jack in the Box",
-      "photo": "http://3.bp.blogspot.com/_EA90Ak61ioY/SxVmMz-wKoI/AAAAAAAAByg/rgHeVOvgESU/s1600/JACK_FREESourdoughJack.jpg"
+      "photo": "images/jb2.jpg"
     },
     {
       "provider": "Jack in the Box",
-      "photo": "http://3.bp.blogspot.com/_EA90Ak61ioY/SxVmMz-wKoI/AAAAAAAAByg/rgHeVOvgESU/s1600/JACK_FREESourdoughJack.jpg"
+      "photo": "images/jb3.png"
     },
     {
       "provider": "Chipotle",
-      "photo": "http://3.bp.blogspot.com/_EA90Ak61ioY/SxVmMz-wKoI/AAAAAAAAByg/rgHeVOvgESU/s1600/JACK_FREESourdoughJack.jpg"
+      "photo": "images/chipotle-coupon.JPG"
+    },
+    {
+      "provider": "iTunes",
+      "photo": "images/itunes-coupon.jpg"
+    },
+    {
+      "provider": "Best Buy",
+      "photo": "images/bestbuy-coupon.jpg"
+    },
+    {
+      "provider": "L'Oreal",
+      "photo": "images/makeup-coupon.png"
+    },
+    {
+      "provider": "Giant",
+      "photo": "images/bike-coupon.png"
     }
   ],
 
