@@ -36,7 +36,7 @@ stickyApp.factory("intelMap", function() {
         cursor: 'pointer', zIndex: 2
       });
       infos[id] = new intel.maps.InfoWindow({
-        content: "<a href='#/company/"+id+"'>"+name+"</a>",
+        content: "<a href='#/company/"+id+"'><b>"+name+"</b></a>",
         type:intel.maps.InfoWindowTypes.INFO1,
         suit:intel.maps.SuitType.SMALL_4,
         position: new intel.maps.LatLng(geodata[0], geodata[1])
