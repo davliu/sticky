@@ -6,8 +6,8 @@
       "photo": "images/JackInTheBoxLogo.png"
     },
     {
-      "name": "Sean in the Box",
-      "photo": "http://s3.amazonaws.com/cmusv-rails-production/people/photo/805/profile/001_XiaoXiao.jpg"
+      "name": "In-N-Out Burger",
+      "photo": "images/In-N-Out_Burger.png"
     },
     {
       "geodata": [37.3903337, -122.0934948],
@@ -43,7 +43,8 @@
       "company": 0
     },
     {
-      "name": "Spicy Tofu",
+      "name": "Double-Double Cheeseburger",
+      "photo": "http://www.mightysweet.com/mesohungry/wp-content/uploads/2009/03/27-in-n-out-double-cheeseburger-and-fries.jpg",
       "company": 1
     }
   ],
@@ -111,7 +112,7 @@
       "category": "Food",
       "type": "company",
       "competitors": [
-        0, 1, 2, 3
+        0, 1, 2, 3, 4
       ],
       "votes": [
         322, 122, 134, 211
