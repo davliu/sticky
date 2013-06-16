@@ -7,8 +7,9 @@ sticky.firebaseCompanyUrl = function(companyId) {
 }
 
 stickyApp.config(function($routeProvider) {
-  $routeProvider. 
+  $routeProvider.
   when("/", {controller: "HomeCtrl", templateUrl: "home.html"}).
+  when("/maps", {controller: "MapCtrl", templateUrl: "maps.html"}).
   when("/profile", {controller: "ProfileCtrl", templateUrl: "profile.html"}).
   when("/dashboard", {controller: "DashboardCtrl", templateUrl: "dashboard.html"}).
   when("/company/create", {controller: "CompanyCtrl", templateUrl: "company/company_create.html"}).
