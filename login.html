@@ -44,15 +44,6 @@
 
     <script>
     function initialize() {
-//        var initOptions = {
-//            client_id: '0aea680f877fa6f6beeb5e0024ab805e',
-//            secret_id: 'ca9d0b745b17be46',
-//            scope: "user:details user:scope profile:full profile:full:write"
-//        };
-//        intel.auth.init(initOptions,
-//                initSuccessCallback,
-//                errorCallback
-//        );
         intel.auth.init({
                     client_id: '0aea680f877fa6f6beeb5e0024ab805e',
                     secret_id: 'ca9d0b745b17be46',
@@ -77,79 +68,13 @@
         },
                 success = function (userDetails)
                 {
-                    successCallback1= function(userDetails)
-                    {
-                        console.log(userDetails.emails[0]);
-                        console.log(userDetails.accounts[0].userName);
                         window.location = "http://davliu.github.io/sticky/#/";
-                    }
-                    errorCallback1 = function(userdetails)
-                    {
-                        alert("failed getting data");
-                    }
-                    intel.user.getDetails(successCallback1, errorCallback1);
-
-
-//                        console.log("werwerw");
-//                        console.log(userDetails.emails[0]);
-//                        console.log(userDetails.accounts[0].userName);
-//                    },
-//
-//                        error = function()
-//                        {
-//                          alert("Failed");
-//                        }
-//                    );
                 },
                 error = function() {
                     console.log("login error");
                 }
 
         );
-//        intel.profile.getUserProfile (
-//                getUserProfileSuccessCallback=function(profile){
-//                    console.log(profile)
-//                },
-//                errorCallback
-//        );
-
-    }
-    function initSuccessCallback (data) {
-        console.log("init ok");
-         loginOptions = {
-            provider: "",
-            name: "myLoginWindow",
-            redirectUri: "http://localhost:8000/WebstormProjects/sticky/index.html"
-        };
-//        var token = {
-//            access_token:data.access_token.token,
-//            refresh_token:data.access_token.refresh_token,
-//            expires_in:data.access_token.expires_in,
-//            token_type:data.access_token.token_type,
-//            authentication_type:"app_authentication",
-//            scope: "user:details user:scope profile:full billing:confirm profile:basic"
-//        };
-//        intel.auth.setAccessToken(token, setTokenSuccessCallback, errorCallback);
-//        var authType = data.access_token.authentication_type;
-//        console.log(authType);
-        intel.auth.login(loginOptions,
-                loginSuccessCallback,
-                errorCallback);
-    }
-    function setTokenSuccessCallback() {
-
-    }
-    function loginSuccessCallback (data) {
-        console.log("login ok");
-        var authType = data.access_token.authentication_type;
-        intel.profile.getUserProfile (getUserProfileSuccessCallback,
-                errorCallback);
-    }
-    function getUserProfileSuccessCallback (profile) {
-        console.log(profile);
-    }
-    function errorCallback (error) {
-        console.log("Error: " + error.desc);
     }
     </script>
 <body>
