@@ -6,7 +6,7 @@ stickyApp.controller('VoteCtrl', function VoteCtrl($scope, $routeParams, $locati
 
   promise.then(function(data) {
     if (data.category == "type") {
-      $scope.competitors = 
+      $scope.competitors =
     }
   });
 
