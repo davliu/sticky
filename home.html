@@ -2,34 +2,18 @@
   {{flash.get()}}
 </div>
 
-<!--
-<h2>Recommended For You</h2>
-
-<div>
-  <div>
-    <div>
-      <img src="https://lh4.googleusercontent.com/-2QbnSUSd67E/UUUCisU_t1I/AAAAAAAABkU/nPQsrIzlxpQ/s250-no/Google%252B_ChipotleProfile.jpg" width="200">
-    </div>
-    <div>Best Chiptole Burrito, June 2013</div>
-    <a href="#vote/Best Chiptole Burrito, June 2013">Vote Now</a>
-  </div>
-
-  <div>
-    <div><img src="http://www.lorealparisusa.com/~/media/Images/LOP/Quizlets/this-that/lip-color-v-lip-balm/lip-color.jpg" width="200"></div>
-    <div>#1 Loreal Lipstick, June 2013</div>
-    <a href="#/">Vote Now</a>
-  </div>
-
-  <div>
-    <div><img src="http://upload.wikimedia.org/wikipedia/commons/e/ef/Dimsum-shanghai.JPG" width="200"></div>
-    <div>Tastiest Dim Sum in Mountain View, June 2013</div>
-    <a href="#/">Vote Now</a>
-  </div>
-</div>
--->
-
 <div class="row">
-  <h2>Trending Competitions</h2>
+  <ul>
+    <li class="large-12 columns page-title"> Trending Competitions </li>
+    <li class="small-4 large-3 columns" ng-repeat="competition in competitions" class="item">
+      <a href="#/vote/{{$index}}">
+        <div class="company-box" style="background-image:url({{ competition.photo }});">
+          <div class="company-name"> {{ competition.name }} </div>
+        </div>
+      </a>
+      <a class="button" href="#/vote/{{$index}}">Vote Now</a>
+    </li>
+  </ul>
 
   <div id="competitions">
     <div ng-repeat="competition in competitions" class="item">
@@ -42,27 +26,3 @@
     </div>
   </div>
 </div>
-
-<!--
-<div>
-  <div>
-    <div>
-      <img src="http://www.wired.com/geekdad/wp-content/uploads/2009/12/the_nerf_raider_holds_up_to_35_foam_darts_cubicles_mates_watch_out.jpg" width="200">
-    </div>
-    <div>Best Nerf Gun, June 2013</div>
-    <a href="#/">Vote Now</a>
-  </div>
-
-  <div>
-    <div><img src="http://images.techhive.com/images/article/2013/06/e3_2013_pc_gaming_slideshow_16_razer_blade-100041977-large.jpg" width="200"></div>
-    <div>Best PC Game, June 2013</div>
-    <a href="#/">Vote Now</a>
-  </div>
-
-  <div>
-    <div><img src="http://t2.gstatic.com/images?q=tbn:ANd9GcR5cXTbddLwkHZpIr3kV9AhhyxdkmVj-lgGaOpiZlWzfzqYdzdSuw" width="200"></div>
-    <div>Best Gaming Snacks, June 2013</div>
-    <a href="#/">Vote Now</a>
-  </div>
-</div>
--->
