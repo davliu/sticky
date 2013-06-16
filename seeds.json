@@ -22,8 +22,11 @@
     {
       "name": "Cooking Papa",
       "photo": "images/CookingPapa.png"
+    },
+    {
+      "name": "L'Oreal",
+      "photo": "images/loreal.jpg"
     }
-
   ],
 
   "items": [
@@ -46,6 +49,21 @@
       "name": "Double-Double Cheeseburger",
       "photo": "http://www.mightysweet.com/mesohungry/wp-content/uploads/2009/03/27-in-n-out-double-cheeseburger-and-fries.jpg",
       "company": 1
+    },
+    {
+      "name": "L'Oreal Paris Infallible",
+      "photo": "http://www.krazygirlcosmetics.com/resources/09082011032319infallible.jpg",
+      "company": 5
+    },
+    {
+      "name": "L'Oreal Paris Colour",
+      "photo": "http://www.echemist.co.uk/productmedia/l-oreal-color-riche-serum-lipstick.jpg",
+      "company": 5
+    },
+    {
+      "name": "L'Oreal Paris Riche",
+      "photo": "http://cdn.makeupstash.com/wp-content/LOr%C3%A9al-LOr-Color-Riche-Lipsticks.jpg",
+      "company": 5
     }
   ],
 
@@ -177,6 +195,43 @@
           "San Mateo, CA": 112,
           "Palo Alto, CA": 136,
           "San Francisco, CA": 343
+        }
+      }
+    },
+    {
+      "name": "Best L'Oreal Makeup",
+      "photo": "images/loreal.jpg",
+      "category": "Cosmetics",
+      "type": "items",
+      "competitors": [
+        4, 5, 6
+      ],
+      "votes": [
+        42, 84, 39
+      ],
+      "endsIn": "14 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 12,
+          "19-25": 28,
+          "25-30": 31,
+          "30-40": 42,
+          "40-50": 18,
+          "50-60": 12,
+          "60+": 22
+        }, 165
+        "gender": {
+          "male": 126,
+          "female": 39
+        },
+        "location": {
+          "Mountain View, CA": 41,
+          "Sunnyvale, CA": 35,
+          "Burlingame, CA": 26,
+          "San Mateo, CA": 14,
+          "Palo Alto, CA": 22,
+          "San Francisco, CA": 27
         }
       }
     }
