@@ -1,4 +1,6 @@
-<div>{{flash.get()}}</div>
+<div class="alert-box success" ng-show="flash.get().length">
+  {{flash.get()}}
+</div>
 
 <!--
 <h2>Recommended For You</h2>
@@ -34,7 +36,7 @@
       <img ng-src="{{competition.photo}}" width="200">
     </div>
     <div>{{competition.name}}</div>
-    <a href="#/">Vote Now</a>
+    <a href="#/vote/{{$index}}">Vote Now</a>
   </div>
 </div>
 <!--

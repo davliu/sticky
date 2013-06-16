@@ -52,7 +52,8 @@
       ],
       "votes": [
         42, 84, 39
-      ]
+      ],
+      "finished": true
     },
     {
       "name": "Best Restaurant in Nor-Cal",
@@ -64,7 +65,8 @@
       ],
       "votes": [
         322, 122, 134, 211
-      ]
+      ],
+      "finished": false
     },
     {
       "name": "Best Chinese Restaurant in Bay Area",
@@ -76,7 +78,8 @@
       ],
       "votes": [
         885, 122
-      ]
+      ],
+      "finished": true
     }
   ]
 }

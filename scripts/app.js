@@ -30,7 +30,7 @@ stickyApp.config(function($routeProvider) {
   when("/dashboard", {controller: "DashboardCtrl", templateUrl: "dashboard.html"}).
   when("/company/create", {controller: "CompanyCtrl", templateUrl: "company/company_create.html"}).
   when('/company/:companyId', {controller: "CompanyCtrl", templateUrl: "company/company_show.html"}).
-  when("/company", {controller: "CompanyCtrl", templateUrl: "company/company_show_all.html"}).
+  when("/companies", {controller: "CompanyCtrl", templateUrl: "company/company_show_all.html"}).
   when("/trending", {controller: "TrendingCtrl", templateUrl: "trending.html"}).
   when("/vote/:competitionId", {controller: "VoteCtrl", templateUrl: "vote.html"});
 });
