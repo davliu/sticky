@@ -20,6 +20,7 @@
       "name": "Cooking Papa",
       "photo": "http://www.mycookingpapa.com/CP.jpg"
     }
+
   ],
 
   "items": [
@@ -41,11 +42,30 @@
     }
   ],
 
+  "coupons": [
+    {
+      "provider": "Jack in the Box",
+      "photo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkLBMOzRZLlFx-F1-7jcfbUqhmgsFHJ-O_5vibnjmc_ugWh_JapA"
+    },
+    {
+      "provider": "Jack in the Box",
+      "photo": "http://3.bp.blogspot.com/_EA90Ak61ioY/SxVmMz-wKoI/AAAAAAAAByg/rgHeVOvgESU/s1600/JACK_FREESourdoughJack.jpg"
+    },
+    {
+      "provider": "Jack in the Box",
+      "photo": "http://3.bp.blogspot.com/_EA90Ak61ioY/SxVmMz-wKoI/AAAAAAAAByg/rgHeVOvgESU/s1600/JACK_FREESourdoughJack.jpg"
+    },
+    {
+      "provider": "Chipotle",
+      "photo": "http://3.bp.blogspot.com/_EA90Ak61ioY/SxVmMz-wKoI/AAAAAAAAByg/rgHeVOvgESU/s1600/JACK_FREESourdoughJack.jpg"
+    }
+  ],
+
   "competitions": [
     {
       "name": "Best Meal in Chipotle",
       "photo": "http://i.huffpost.com/gen/332205/thumbs/s-CHIPOTLE-MENU-large300.jpg",
-      "category": "food",
+      "category": "Food",
       "type": "items",
       "competitors": [
         0, 1, 2
@@ -53,12 +73,13 @@
       "votes": [
         42, 84, 39
       ],
-      "finished": true
+      "endsIn": "14 hours",
+      "finished": false
     },
     {
       "name": "Best Restaurant in Nor-Cal",
       "photo": "http://www.ciiwa.com/images/panera.jpg",
-      "category": "food",
+      "category": "Food",
       "type": "company",
       "competitors": [
         0, 1, 2, 3
@@ -66,12 +87,13 @@
       "votes": [
         322, 122, 134, 211
       ],
+      "endsIn": "5 days, 8 hours",
       "finished": false
     },
     {
       "name": "Best Chinese Restaurant in Bay Area",
       "photo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCkJ9hmr0JYbNt8sK-hMZRlETclLtf9Rr21_tt6zjiYEjgMvi9Ww",
-      "category": "food",
+      "category": "Food",
       "type": "company",
       "competitors": [
         3, 4
@@ -79,7 +101,8 @@
       "votes": [
         885, 122
       ],
-      "finished": true
+      "endsIn": "12 days, 9 hours",
+      "finished": false
     }
   ]
 }
