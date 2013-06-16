@@ -12,7 +12,7 @@
     <link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 2)" href="styles/phone.css">
 
 
-    <script type="text/javascript" src="https://api.intel.com:8081/js/location/v2/intelmaps.js"></script>
+    <script type="text/javascript" src="https://api.intel.com/js/v1/intel.cloudservices.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="https://cdn.firebase.com/v0/firebase.js"></script>
@@ -22,19 +22,18 @@
     <script type="text/javascript" src="https://api.intel.com:8081/js/v1/intel.cloudservices.js"></script>
     <script type="text/javascript" data-app-id="habPxzWob50jsZYoCMN7aw" src="https://assets.yammer.com/platform/yam.js"></script>
   </head>
-
-  <body ng-controller="IndexCtrl">
+  <body>
 
   <div id="main-menu">
 
     <h1 id="menu-logo">Sticky</h1>
     <ul class="side-nav">
       <li class="active"><a href="#/">Home</a></li>
-      <li><a href="#/trending">Trending</a></li>
-      <li><a href="#/profile">Profile</a></li>
+      <li><a href="#/coupon">Coupon</a></li>
       <li><a href="#/dashboard">Dashboard</a></li>
       <li><a href="#/companies">Companies</a></li>
       <li><a href="#/maps">Discover</a></li>
+      <li><a href="" onclick="logout()">Sign out</a></li>
       <li><span id="yammer-login"></span></li>
       <script>
         yam.connect.loginButton('#yammer-login', function (resp) {
@@ -43,7 +42,6 @@
           }
         });
       </script>
-      <a href="" ng-click="switchIdStatus()">Sign {{getIdStatus()}}</a>
     </ul>
 
   </div>
@@ -57,8 +55,6 @@
 
       <section class="top-bar-section">
         <ul class="right">
-          <li class="divider"></li>
-          <li class="active"><a href="#/trending">Trending</a></li>
           <li class="divider"></li>
           <li><a href="#/profile">Profile</a></li>
           <li class="divider"></li>
@@ -76,13 +72,10 @@
 
   </body>
 
-
-
-
   <script src="scripts/app.js"></script>
   <script src="controllers/HomeController.js"></script>
   <script src="controllers/DashboardController.js"></script>
-  <script src="controllers/ProfileController.js"></script>
+  <script src="controllers/CouponController.js"></script>
   <script src="controllers/CompanyController.js"></script>
   <script src="controllers/VoteController.js"></script>
   <script src="controllers/TrendingController.js"></script>

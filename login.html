@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=9,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Shared Tasks, To-do List &amp; Reminders on iPhone, Android, &amp; Web | Astrid</title>
+    <link href="/favicon.ico" rel="shortcut icon">
+    <meta content="Android's best to-do list now available on iPhone, iPad, the Chrome Store and the web. &#x000A;Unique reminders, clean design, and ability to add tasks by email make it perfect forpersonal use, sharing lists and team project management." name="description">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="Shared Tasks, To-do List &amp; Reminders on iPhone, Android, &amp; Web | Astrid" property="og:title">
+    <meta content="Astrid - To-do, Together" property="og:description">
+    <meta content="//dui76s50qcnvl.cloudfront.net/assets/logo_fb-d27cfb6760890978326854a747ad0686.png" property="og:image">
+    <meta ::APP_ID content="Facebook" property="fb:app_id">
+    <meta content="RUnixs4CqFZ8CEBMn8eOabfBDbU" name="alexaVerifyID">
+    <meta content="app-id=453396855" name="apple-itunes-app">
+    <link href="//d2ysl8jcwph1n6.cloudfront.net/assets/landing-a239721124e913ba7c61d81dee9b28f3.css" media="screen" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+    <link href="//d2ysl8jcwph1n6.cloudfront.net/assets/ie-2d3d44b10918706cb56c85476044a49e.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <link href="https://chrome.google.com/webstore/detail/pmjlnfgnkpknjgkpohcgoeiakkbofpjo" rel="chrome-webstore-item">
+    <meta content="authenticity_token" name="csrf-param" />
+    <meta content="SXdGyzxzeEYX5LU4w4U1bCWdF5OjYdf0OrtU+oC5TPM=" name="csrf-token" />
+    <script>
+        //<![CDATA[
+        var _errs=["50f4ce396040af613e000009"];(function(a,b){a.onerror=function(){_errs.push(arguments)};
+            var d=function(){var a=b.createElement("script"),c=b.getElementsByTagName("script")[0];
+                a.src="//d15qhc0lu1ghnk.cloudfront.net/beacon.js";a.async=!0;
+                c.parentNode.insertBefore(a,c)};a.addEventListener?a.addEventListener("load",d,!1):
+                    a.attachEvent("onload",d)})(window,document);
+        //]]>
+    </script>
+    <script>
+        //<![CDATA[
+        var actfm = { data: {}, env: "production" }, fb = null;
+        //]]>
+    </script>
+    <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+    <script type="text/javascript" src="https://api.intel.com:8081/js/v1/intel.cloudservices.js"></script>
+    </head>
+
+    <script>
+    function initialize() {
+        var initOptions = {
+            client_id: '0aea680f877fa6f6beeb5e0024ab805e',
+            secret_id: 'ca9d0b745b17be46',
+            scope: "user:details user:scope profile:full billing:confirm profile:basic"
+        };
+        intel.auth.init(initOptions,
+                initSuccessCallback,
+                errorCallback
+        );
+    }
+    function initSuccessCallback (data) {
+        console.log("init ok");
+        var authType = data.access_token.authentication_type;
+        console.log(authType);
+        loginOptions = {
+            provider: "",
+            name: "myLoginWindow",
+            redirectUri: "http://localhost:8000/WebstormProjects/sticky/index.html"
+        };
+        intel.auth.login(loginOptions,
+                loginSuccessCallback,
+                errorCallback);
+    }
+    function loginSuccessCallback (data) {
+        console.log("login ok");
+        var authType = data.access_token.authentication_type;
+        intel.profile.getUserProfile (getUserProfileSuccessCallback,
+                errorCallback);
+    }
+    function getUserProfileSuccessCallback (profile) {
+        console.log(profile);
+    }
+    function errorCallback (error) {
+        console.log("Error: " + error.desc);
+    }
+    </script>
+<body>
+<p class="alert-banner alert-error hide"></p>
+<div class="main container">
+<div class="masthead">
+    <div class="row">
+        <div class="phone span6">
+            <div class="announce">
+                <h2>Sticky</h2>
+                <p>
+                    Vote for the best and get coupons!
+                </p>
+            </div>
+        </div>
+        <div class="span6">
+            <div class="login">
+                <div class="login-user">
+                    <div class="web-buttons" style="">
+                        <h2>
+                            <div class="sign-in">
+                                Sign in to Sticky
+                            </div>
+                        </h2>
+                        <div class="social-help-text sign-in">
+                            <img src="medium_btn_blue.png" onclick="initialize()">
+                        </div>
+                        <form accept-charset="UTF-8" action="/authentications/perform_signup.json" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="SXdGyzxzeEYX5LU4w4U1bCWdF5OjYdf0OrtU+oC5TPM=" /></div>
+                            <input class="email" id="user_login" name="user[login]" placeholder="Email" size="30" tabindex="5" type="email" />
+                            <input class="password" id="user_password" name="user[password]" placeholder="Password" size="30" tabindex="6" type="password" />
+                            <input id="time_zone" name="time_zone" type="hidden" />
+                            <div class="submit">
+                                <a class="forgot-password hide">
+                                    Forgot password?
+                                </a>
+                                <input class="btn btn-signin sign-in hide" id="signin_button" name="commit" type="submit" value="Sign in" />
+                                <input class="btn btn-register sign-up" id="register_button" name="commit" tabindex="7" type="submit" value="Sign in" />
+                                <div class="clearfix"></div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="toggle-signup web-buttons" style="">
+<span class="sign-up">
+new user?
+→
+</span>
+                    <a class="sign-up" href="javascript:;">
+                        Sign up
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+    NREUMQ.push(["load",new Date().getTime()]);
+    var e=document.createElement("script");
+    e.type="text/javascript";
+    e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+            "rpm-images.newrelic.com/42/eum/rum.js";
+    document.body.appendChild(e);
+    if(NREUMQ.a)NREUMQ.a();
+};
+    NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-1.newrelic.com","7470c112de","111932","cgtbQRMLVF1dFxpfDFwBGlwPAF1J",10,14,new Date().getTime(),"","","","",""]);</script></body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<div id="pubnub" origin="pubsub.pubnub.com" ssl="on" sub-key="sub-3f8a2db0-a433-11e1-bb4a-3d3fcc12694e"></div>
+<script src="//d1ofdecq6ol6l2.cloudfront.net/assets/landing_2-5d77616599838d4bb2cded3c6c562941.js" type="text/javascript"></script>
+</html>

@@ -29,14 +29,17 @@
   "items": [
     {
       "name": "Jack's Big Stack",
+      "photo": "images/Jacks-Big-Stack.png",
       "company": 0
     },
     {
       "name": "Sirloin Cheeseburger",
+      "photo": "images/Sirloin-Cheeseburger.png",
       "company": 0
     },
     {
       "name": "Grilled Chicken Salad",
+      "photo": "images/GrilledChickenSalad.png",
       "company": 0
     },
     {
@@ -90,7 +93,7 @@
         },
         "gender": {
           "male": 80,
-          "female":85
+          "female": 85
         },
         "location": {
           "Mountain View, CA": 41,
