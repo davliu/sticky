@@ -3,38 +3,46 @@
     {
       "geodata": [37.402111, -122.078803],
       "name": "Jack in the Box",
-      "photo": "images/JackInTheBoxLogo.png"
+      "photo": "images/JackInTheBoxLogo.png",
+      "voice": "http://voicebunny.s3.amazonaws.com/live/705CA7CAFD873A0B277F_dd4f5.mp3?h=815187"
     },
     {
       "geodata": [37.380439, -122.074177],
       "name": "In-N-Out Burger",
-      "photo": "images/In-N-Out_Burger.png"
+      "photo": "images/In-N-Out_Burger.png",
+      "voice": ""
     },
     {
       "geodata": [37.3903337, -122.0934948],
       "name": "Chipotle",
-      "photo": "images/chipotle.png"
+      "photo": "images/chipotle.png",
+      "voice": "http://voicebunny.s3.amazonaws.com/live/5497EED244B36706E95D_75a40.mp3?h=815186"
     },
     {
       "geodata": [37.394306, -122.078532],
       "name": "Fu Lam Mum",
-      "photo": "images/fu-lam-mum.png"
+      "photo": "images/fu-lam-mum.png",
+      "voice": "http://voicebunny.s3.amazonaws.com/live/531E40D54FEFE1BD1B06_7e439.mp3?h=815185"
     },
     {
       "name": "Cooking Papa",
-      "photo": "images/CookingPapa.png"
+      "photo": "images/CookingPapa.png",
+      "voice": "http://voicebunny.s3.amazonaws.com/live/54EBA238D841833316EE_c0c13.mp3?h=815188"
     },
     {
       "name": "L'Oreal",
-      "photo": "images/loreal.jpg"
+      "photo": "images/loreal.jpg",
+      "voice": ""
     },
     {
       "name": "LG",
-      "photo": "images/lg-logo.jpeg"
+      "photo": "images/lg-logo.jpeg",
+      "voice": ""
     },
     {
       "name": "Felix's Market",
-      "photo": "images/farmers-market-17.jpg"
+      "photo": "images/farmers-market-17.jpg",
+      "voice": ""
     }
   ],
 
