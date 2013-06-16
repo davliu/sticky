@@ -36,7 +36,8 @@
       <div>
         <img ng-src="{{competition.photo}}" width="200">
       </div>
-      <div>{{competition.name}}</div>
+      <div class="competition-name">{{competition.name}}</div>
+      <div class="deadline">Ends in {{competition.endsIn}}.</div>
       <a class="button" href="#/vote/{{$index}}">Vote Now</a>
     </div>
   </div>
