@@ -1,10 +1,16 @@
 <html ng-app="stickyApp">
   <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=2.0, user-scalable=yes">
+
     <link rel="stylesheet" href="styles/libs/normalize.css">
     <link rel="stylesheet" href="styles/libs/foundation.min.css">
     <link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/maps.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" media="only screen and (max-width: 640px)" href="styles/phone.css">
+    <link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 2)" href="styles/phone.css">
+
 
     <script type="text/javascript" src="https://api.intel.com:8081/js/location/v2/intelmaps.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
@@ -35,13 +41,25 @@
           if (resp.authResponse) {
             document.getElementById('yammer-login').innerHTML = 'Yammer! Logined';
           }
-        }); 
+        });
       </script>
       <a href="" ng-click="switchIdStatus()">Sign {{getIdStatus()}}</a>
     </ul>
 
   </div>
   <div id="main-content">
+    <div class="contain-to-grid sticky">
+    <nav id="mobile-menu" class="top-bar">
+      <ul class="title-area">
+        <li class="name"> <h1><a href="#"> Sticky  </a></h1> </li>
+  <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+      </section>
+    </nav>
+  </div>
     <div style="height: 100%;" ng-view> </div>
   </div>
 

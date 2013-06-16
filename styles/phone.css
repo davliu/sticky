@@ -1,0 +1,10 @@
+#main-menu{
+  display:none;
+}
+
+#mobile-menu{ display: block; }
+
+#main-content {
+  width: 100%;
+  left: 0;
+}
