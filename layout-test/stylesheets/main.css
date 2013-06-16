@@ -44,3 +44,20 @@ body { height: 100%; position: relative;}
 	left: 20%;
 	width: 80%; height: 100%;
 }
+
+#map-view{
+    position: relative;
+    width: 100%; min-height: 100%;
+    z-index: 0;
+}
+#intel-map{
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+#intel-map img{
+    max-width: none;
+}
+#map-searchbox{
+    position: absolute; top: 1em; right: 1em;
+    width: 20em;
+}

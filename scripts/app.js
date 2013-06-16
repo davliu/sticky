@@ -6,6 +6,22 @@ sticky.firebaseUrl = function(rsrc) {
 	return "https://stickyapp.firebaseIO.com/" + rsrc;
 }
 
+sticky.postYammerMessage = function(message) {
+  yam.request({
+    url: "https://www.yammer.com/api/v1/messages.json",
+    method: "POST",
+    data: {
+      "body": message
+    },
+    success: function (user) {
+    
+    },
+    error: function (user) {
+      alert("There was an error with the request.");
+    }
+  });
+};
+
 stickyApp.config(function($routeProvider) {
   $routeProvider.
   when("/", {controller: "HomeCtrl", templateUrl: "home.html"}).

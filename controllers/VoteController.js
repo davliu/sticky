@@ -4,6 +4,7 @@ stickyApp.controller('VoteCtrl', function VoteCtrl($scope, $routeParams, $locati
 
   var promise = angularFire(sticky.firebaseUrl("competitions/" + $routeParams.competitionId), $scope, "competition", {});
 
+
   promise.then(function(competition) {
     if (competition.type == "company") {
       var competitorPromise = angularFire(sticky.firebaseUrl("companies"), $scope, "competitors");
