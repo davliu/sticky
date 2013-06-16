@@ -6,15 +6,19 @@
   <img ng-src="{{company.photo}}">
   <h3>Competitions</h3>
   <ul>
-    <li ng-repeat="competition in joinedCompetitions">
-      <img ng-src="{{competition.photo}}" width="100">
-      <div>{{competition.name}}</div>
+    <li ng-repeat="c in competitionInfo">
+      <img ng-src="{{c.competition.photo}}" width="100">
+      <div>
+        <h5>{{c.competition.name}}</h5>
+        <ng-switch on="c.competition.type">
+          <div ng-switch-when="company">
+            Ranked #{{c.info.rank}}, <span class="votes">{{c.info.votes}}</span> votes
+          </div>
+          <div ng-switch-when="items">
+            <span class="product">{{c.info.itemName}}</span> ranked #1, <span class="votes">{{c.info.votes}}</span> votes
+          </div>
+        </ng-switch>
+      </div>
     </li>
   </ul>
 </div>
-
-<!--
-<div>
-	<button ng-click="createItem()">Create Item</button>
-</div>
--->
