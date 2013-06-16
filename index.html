@@ -3,15 +3,17 @@
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script type="text/javascript" src="https://api.intel.com:8081/js/v1/intel.cloudservices.js"></script>
     <script src="angularfire.min.js"></script>
   </head>
 
-  <body>
+  <body ng-controller="IndexCtrl">
     <ul>
       <a href="#/">Home</a>
       <a href="#/profile">Profile</a>
       <a href="#/dashboard">Dashboard</a>
       <a href="#/company">Company</a>
+      <a href="#/identity">Sign {{getIdStatus()}}</a>
     </ul>
 
     <div ng-view>
@@ -24,4 +26,5 @@
   <script src="controllers/ProfileController.js"></script>
   <script src="controllers/CompanyController.js"></script>
   <script src="controllers/VoteController.js"></script>
+  <script src="controllers/IndexController.js"></script>
 </html>
