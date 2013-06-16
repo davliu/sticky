@@ -12,7 +12,7 @@
     <link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 2)" href="styles/phone.css">
 
 
-    <script type="text/javascript" src="https://api.intel.com:8081/js/location/v2/intelmaps.js"></script>
+    <script type="text/javascript" src="https://api.intel.com/js/v1/intel.cloudservices.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="https://cdn.firebase.com/v0/firebase.js"></script>
@@ -22,10 +22,9 @@
     <script type="text/javascript" src="https://api.intel.com:8081/js/v1/intel.cloudservices.js"></script>
     <script type="text/javascript" data-app-id="habPxzWob50jsZYoCMN7aw" src="https://assets.yammer.com/platform/yam.js"></script>
   </head>
-
   <body>
 
-  <div id="main-menu" ng-controller="IndexCtrl">
+  <div id="main-menu">
 
     <h1 id="menu-logo">Sticky</h1>
     <ul class="side-nav">
@@ -34,6 +33,7 @@
       <li><a href="#/dashboard">Dashboard</a></li>
       <li><a href="#/companies">Companies</a></li>
       <li><a href="#/maps">Discover</a></li>
+      <li><a href="" onclick="logout()">Sign out</a></li>
       <li><span id="yammer-login"></span></li>
       <script>
         yam.connect.loginButton('#yammer-login', function (resp) {
@@ -42,7 +42,6 @@
           }
         });
       </script>
-      <li><a href="" onclick="switchIdStatus()">Sign {{getIdStatus()}}</a></li>
     </ul>
 
   </div>
