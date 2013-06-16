@@ -1,16 +1,20 @@
 var sticky = sticky || {};
 
-stickyApp.controller('MapCtrl', function MapCtrl($scope, angularFireCollection, intelMap) {
-  $scope.mapInstance = intelMap.initMap();
+stickyApp.controller('MapCtrl', function MapCtrl($scope, angularFire, intelMap) {
+  $scope.mapInstance = intelMap.initialize();
+  $scope.allCompanies;
+  $scope.filteredCompanies;
 
-  // $scope.createItem = function(companyId) {
-  //   sticky.firebase.companyRef(companyId).push(
-  //     {
-  //       name: "Mapo Tofu",
-  //       price: 12,
-  //       votes: 0
-  //     });
-  // }
-
+  // Initialize
+  var companiesPromise = angularFire(sticky.firebaseUrl("companies"), $scope, "companies");
+  companiesPromise.then(function(companies) {
+    //console.log(companies);
+    $scope.allCompanies = companies;
+    for(var i=0; i<companies.length; ++i){
+      if(companies[i].geodata){
+        intelMap.addMarker(i, companies[i].name, companies[i].geodata);
+      }
+    }   
+  });
   
 });
