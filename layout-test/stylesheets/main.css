@@ -19,7 +19,7 @@ body { height: 100%; position: relative;}
 #main-menu #menu-logo{
     color: #ddd;
     font-family: 'Lily Script One', cursive;
-    text-shadow: 2px 2px #666;
+    text-shadow: 2px 2px #555;
     /*transition: all 300ms ease;*/
 }
 

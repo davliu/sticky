@@ -14,5 +14,6 @@ stickyApp.config(function($routeProvider) {
   when("/company/create", {controller: "CompanyCtrl", templateUrl: "company/company_create.html"}).
   when('/company/:companyId', {controller: "CompanyCtrl", templateUrl: "company/company_show.html"}).
   when("/company", {controller: "CompanyCtrl", templateUrl: "company/company_show_all.html"}).
+  when("/trending", {controller: "TrendingCtrl", templateUrl: "trending.html"}).
   when("/vote/:competitionName", {controller: "VoteCtrl", templateUrl: "vote.html"});
 });
