@@ -15,8 +15,28 @@
     <script type="text/javascript" src="https://api.intel.com:8081/js/v1/intel.cloudservices.js"></script>
     <script type="text/javascript" data-app-id="habPxzWob50jsZYoCMN7aw" src="https://assets.yammer.com/platform/yam.js"></script>
   </head>
+  <script>
+      function init() {
+          var token = null;
+          intel.auth.init({
+                      //Client id and secret id obtained during application creation
+                      client_id: '0aea680f877fa6f6beeb5e0024ab805e',
+                      secret_id: 'ca9d0b745b17be46',
+                      scope: "user:details"
+                  },
+                  successCallback = function (data) {
+                      token = data.access_token;
+                      //data.access_token.intel.auth.setAccessToken(data.access_token, onSetTokenSuccessCallback, onSetTokenErrorCallback);
+                      console.log("init succeed");
+                  },
+                  errorCallback = function (data) {
+                      console.log("init error");
+                  }
+          );
+      }
+  </script>
 
-  <body>
+  <body onload="init()">
 
   <div id="main-menu" ng-controller="IndexCtrl">
 
@@ -36,7 +56,7 @@
           }
         }); 
       </script>
-      <li><a href="" onclick="switchIdStatus()">Sign {{getIdStatus()}}</a></li>
+      <li><a href="" onclick="logout()">Sign out</a></li>
     </ul>
 
   </div>

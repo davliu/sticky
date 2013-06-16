@@ -40,7 +40,38 @@
         //]]>
     </script>
 
-    <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script></head>
+    <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+    <script type="text/javascript" src="https://api.intel.com:8081/js/v1/intel.cloudservices.js"></script>
+    </head>
+
+    <script>
+    function login() {
+        var token = null;
+        intel.auth.init(
+            {
+                client_id: '0aea680f877fa6f6beeb5e0024ab805e',
+                secret_id: 'ca9d0b745b17be46',
+                scope: "user:details"
+            },
+            successCallback = function (data) {
+                console.log("init succeeded");
+                intel.auth.login({
+                    provider : "",
+                    name: "myLoginWindow",
+                        redirectUri: "http://localhost:8000/WebstormProjects/sticky/index.html",
+                    locale: "en"
+                }, function(data) {
+                    console.log("login succeeded");
+                }, function(error) {
+                    console.log("login failed");
+                });
+            },
+            errorCallback = function (data) {
+                console.log("init failed");
+            }
+        );
+    }
+    </script>
 <body>
 <p class="alert-banner alert-error hide"></p>
 <div class="main container">
@@ -63,7 +94,7 @@
                                 Sign in to Sticky
                             </div>
                         </h2>
-                        <button><img src="medium_btn_blue.png">
+                        <button onclick="login()"><img src="medium_btn_blue.png">
                         </button>
                         <div class="social-help-text sign-up">
                             Sign in with Intel
