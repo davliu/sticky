@@ -1,3 +1,5 @@
 <ul>
-  <li ng-repeat="company in companies">{{company.name}}</li>
+  <li ng-repeat="id in companyIds">
+    <a href="#/company/{{id}}">{{companies[id].name}}</a>
+  </li>
 </ul>
