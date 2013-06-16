@@ -6,14 +6,18 @@ Category: {{competition.category}}
   <img ng-src="{{competition.photo}}" width="200">
 </div>
 
-{{competition}}
-
-<ul>
-  <li ng-repeat="competitor in competitors">
+<div class="row">
+  <div class="large-4 columns" ng-repeat="competitor in filteredCompetitors" ng-click="selectCompetitor($index)">
     <img ng-src="{{competitor.photo}}">
-    <span>{{competitor.name}}</span>
-    <span>Current Votes: {{competition['votes'][$index]}}</span>
-  </li>
-</ul>
+    <div ng-class="{'panel callout': $index == selectedIndex}">
+      <h5>{{competitor.name}}</h5>
+      <p>Votes: {{competition['votes'][$index]}}</p>
+    </div>
+  </div>
+</div>
 
+<div data-alert class="alert-box alert" ng-show="voteError">
+  Please vote before continuing.
+  <a href="#" class="close">&times;</a>
+</div>
 <button ng-click="submitVote()">Vote!</button>
