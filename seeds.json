@@ -20,6 +20,7 @@
       "name": "Cooking Papa",
       "photo": "http://www.mycookingpapa.com/CP.jpg"
     }
+
   ],
 
   "items": [
@@ -38,6 +39,25 @@
     {
       "name": "Spicy Tofu",
       "company": 1
+    }
+  ],
+
+  "coupons": [
+    {
+      "provider": "Jack in the Box",
+      "photo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkLBMOzRZLlFx-F1-7jcfbUqhmgsFHJ-O_5vibnjmc_ugWh_JapA"
+    },
+    {
+      "provider": "Jack in the Box",
+      "photo": "http://3.bp.blogspot.com/_EA90Ak61ioY/SxVmMz-wKoI/AAAAAAAAByg/rgHeVOvgESU/s1600/JACK_FREESourdoughJack.jpg"
+    },
+    {
+      "provider": "Jack in the Box",
+      "photo": "http://3.bp.blogspot.com/_EA90Ak61ioY/SxVmMz-wKoI/AAAAAAAAByg/rgHeVOvgESU/s1600/JACK_FREESourdoughJack.jpg"
+    },
+    {
+      "provider": "Chipotle",
+      "photo": "http://3.bp.blogspot.com/_EA90Ak61ioY/SxVmMz-wKoI/AAAAAAAAByg/rgHeVOvgESU/s1600/JACK_FREESourdoughJack.jpg"
     }
   ],
 
