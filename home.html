@@ -6,6 +6,7 @@
   <ul>
     <li class="large-12 columns page-title"> Trending Competitions </li>
     <li class="small-6 large-3 columns" ng-repeat="competition in competitions" class="item">
+      <a class="yammer" href="" ng-click="yammerCompetition($index)"></a>
       <a href="#/vote/{{$index}}">
         <div class="company-box" style="background-image:url({{ competition.photo }});">
           <div class="company-name"> {{ competition.name }} </div>

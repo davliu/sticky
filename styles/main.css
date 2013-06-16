@@ -103,6 +103,17 @@ body { height: 100%; position: relative; overflow: hidden; background-image:url(
   margin-left: 20px;
 }
 
+.yammer {
+  display: block;
+  background-image: url("../yammer-icon.png");
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  z-index: 999;
+}
+
 .voted-box {
   color: white;
 }

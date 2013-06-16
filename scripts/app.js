@@ -15,7 +15,7 @@ sticky.postYammerMessage = function(message) {
       "body": message
     },
     success: function (user) {
-    
+      alert("Finish Sharing to Yammer!");
     },
     error: function (user) {
       alert("There was an error with the request.");
