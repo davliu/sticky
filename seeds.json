@@ -32,7 +32,17 @@
     {
       "name": "L'Oreal",
       "photo": "images/loreal.jpg",
-      "voice": "http://voicebunny.com/projects/2486883649BC4DB3F592"
+      "voice": ""
+    },
+    {
+      "name": "LG",
+      "photo": "images/lg-logo.jpeg",
+      "voice": ""
+    },
+    {
+      "name": "Felix's Market",
+      "photo": "images/farmers-market-17.jpg",
+      "voice": ""
     }
   ],
 
@@ -71,6 +81,27 @@
       "name": "L'Oreal Paris Riche",
       "photo": "images/loreal-riche.jpg",
       "company": 5
+    },
+    {
+      "name": "LG - 60\" Class - LED - 1080p",
+      "photo": "images/lg-tv2.jpg",
+      "company": 6
+    },
+    {
+      "name": "Plants and Zombies",
+      "photo": "images/plants-vs-zombies.jpg"
+    },
+    {
+      "name": "ASUS W90 Gaming Laptop",
+      "photo": "images/ces09-asus-w90-laptop.jpg"
+    },
+    {
+      "name": "GMC Denali 700c Men's Road Bike",
+      "photo": "images/0001675192706_500X500.jpg"
+    },
+    {
+      "name": "iPhone 5 White",
+      "photo": "images/iPhone_5_AngledSharp_Front_Back_White_PRINT.jpg"
     }
   ],
 
@@ -338,7 +369,7 @@
       "category": "Electronics",
       "type": "items",
       "competitors": [
-        4
+        7
       ],
       "votes": [
         42
@@ -373,9 +404,9 @@
       "name": "Best Tower Defense Game on iPad",
       "photo": "images/kingdom-rush.jpg",
       "category": "Games",
-      "type": "company",
+      "type": "items",
       "competitors": [
-        3
+        8
       ],
       "votes": [
         885
@@ -412,7 +443,7 @@
       "category": "Electronics",
       "type": "items",
       "competitors": [
-        4
+        9
       ],
       "votes": [
         42
@@ -449,7 +480,7 @@
       "category": "Food",
       "type": "company",
       "competitors": [
-        3
+        7
       ],
       "votes": [
         885
@@ -484,9 +515,9 @@
       "name": "Best Bike",
       "photo": "images/bike.jpg",
       "category": "Sporting Goods",
-      "type": "company",
+      "type": "items",
       "competitors": [
-        3
+        10 
       ],
       "votes": [
         885
@@ -521,9 +552,9 @@
       "name": "Best Cellphone",
       "photo": "images/phone.jpeg",
       "category": "Electronics",
-      "type": "company",
+      "type": "items",
       "competitors": [
-        3
+        11
       ],
       "votes": [
         885
