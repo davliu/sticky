@@ -70,8 +70,8 @@
 
   "competitions": [
     {
-      "name": "Best Meal at Chipotle",
-      "photo": "http://i.huffpost.com/gen/332205/thumbs/s-CHIPOTLE-MENU-large300.jpg",
+      "name": "Best Meal at Jack in the Box",
+      "photo": "images/jackinbox-competition.png",
       "category": "Food",
       "type": "items",
       "competitors": [
