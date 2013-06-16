@@ -6,6 +6,7 @@
       "photo": "images/JackInTheBoxLogo.png"
     },
     {
+      "geodata": [37.380439, -122.074177],
       "name": "In-N-Out Burger",
       "photo": "images/In-N-Out_Burger.png"
     },
@@ -232,6 +233,302 @@
           "San Mateo, CA": 14,
           "Palo Alto, CA": 22,
           "San Francisco, CA": 27
+        }
+      }
+    },
+    {
+      "name": "Best Salad at Jack in the Box",
+      "photo": "images/salad.jpg",
+      "category": "Food",
+      "type": "items",
+      "competitors": [
+        2
+      ],
+      "votes": [
+        39
+      ],
+      "endsIn": "5 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 12,
+          "19-25": 28,
+          "25-30": 31,
+          "30-40": 42,
+          "40-50": 18,
+          "50-60": 12,
+          "60+": 22
+        },
+        "gender": {
+          "male": 80,
+          "female": 85
+        },
+        "location": {
+          "Mountain View, CA": 41,
+          "Sunnyvale, CA": 35,
+          "Burlingame, CA": 26,
+          "San Mateo, CA": 14,
+          "Palo Alto, CA": 22,
+          "San Francisco, CA": 27
+        }
+      }
+    },
+    {
+      "name": "Best Dim Sum Place in Mountain View",
+      "photo": "images/dimsum-box.jpg",
+      "category": "Food",
+      "type": "company",
+      "competitors": [
+        3
+      ],
+      "votes": [
+        885
+      ],
+      "endsIn": "5 days, 20 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 150,
+          "25-30": 176,
+          "30-40": 240,
+          "40-50": 188,
+          "50-60": 120,
+          "60+": 51
+        },
+        "gender": {
+          "male": 671,
+          "female": 336
+        },
+        "location": {
+          "Mountain View, CA": 211,
+          "Sunnyvale, CA": 129,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 343
+        }
+      }
+    },
+    {
+      "name": "Best LG TV",
+      "photo": "images/lg-tv.jpg",
+      "category": "Electronics",
+      "type": "items",
+      "competitors": [
+        4
+      ],
+      "votes": [
+        42
+      ],
+      "endsIn": "11 day, 10 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 12,
+          "19-25": 28,
+          "25-30": 31,
+          "30-40": 42,
+          "40-50": 18,
+          "50-60": 12,
+          "60+": 22
+        },
+        "gender": {
+          "male": 126,
+          "female": 39
+        },
+        "location": {
+          "Mountain View, CA": 41,
+          "Sunnyvale, CA": 35,
+          "Burlingame, CA": 26,
+          "San Mateo, CA": 14,
+          "Palo Alto, CA": 22,
+          "San Francisco, CA": 27
+        }
+      }
+    },
+    {
+      "name": "Best Tower Defense Game on iPad",
+      "photo": "images/kingdom-rush.jpg",
+      "category": "Games",
+      "type": "company",
+      "competitors": [
+        3
+      ],
+      "votes": [
+        885
+      ],
+      "endsIn": "12 days, 21 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 150,
+          "25-30": 176,
+          "30-40": 240,
+          "40-50": 188,
+          "50-60": 120,
+          "60+": 51
+        },
+        "gender": {
+          "male": 671,
+          "female": 336
+        },
+        "location": {
+          "Mountain View, CA": 211,
+          "Sunnyvale, CA": 129,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 343
+        }
+      }
+    },
+    {
+      "name": "Best Laptops",
+      "photo": "images/macbook.jpg",
+      "category": "Electronics",
+      "type": "items",
+      "competitors": [
+        4
+      ],
+      "votes": [
+        42
+      ],
+      "endsIn": "9 day, 1 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 12,
+          "19-25": 28,
+          "25-30": 31,
+          "30-40": 42,
+          "40-50": 18,
+          "50-60": 12,
+          "60+": 22
+        },
+        "gender": {
+          "male": 126,
+          "female": 39
+        },
+        "location": {
+          "Mountain View, CA": 41,
+          "Sunnyvale, CA": 35,
+          "Burlingame, CA": 26,
+          "San Mateo, CA": 14,
+          "Palo Alto, CA": 22,
+          "San Francisco, CA": 27
+        }
+      }
+    },
+    {
+      "name": "Best Farmer's Market in Bay Area",
+      "photo": "images/farmers-market.jpeg",
+      "category": "Food",
+      "type": "company",
+      "competitors": [
+        3
+      ],
+      "votes": [
+        885
+      ],
+      "endsIn": "12 days, 8 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 150,
+          "25-30": 176,
+          "30-40": 240,
+          "40-50": 188,
+          "50-60": 120,
+          "60+": 51
+        },
+        "gender": {
+          "male": 671,
+          "female": 336
+        },
+        "location": {
+          "Mountain View, CA": 211,
+          "Sunnyvale, CA": 129,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 343
+        }
+      }
+    },
+    {
+      "name": "Best Bike",
+      "photo": "images/bike.jpg",
+      "category": "Sporting Goods",
+      "type": "company",
+      "competitors": [
+        3
+      ],
+      "votes": [
+        885
+      ],
+      "endsIn": "3 days, 8 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 150,
+          "25-30": 176,
+          "30-40": 240,
+          "40-50": 188,
+          "50-60": 120,
+          "60+": 51
+        },
+        "gender": {
+          "male": 671,
+          "female": 336
+        },
+        "location": {
+          "Mountain View, CA": 211,
+          "Sunnyvale, CA": 129,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 343
+        }
+      }
+    },
+    {
+      "name": "Best Cellphone",
+      "photo": "images/phone.jpeg",
+      "category": "Electronics",
+      "type": "company",
+      "competitors": [
+        3
+      ],
+      "votes": [
+        885
+      ],
+      "endsIn": "2 days, 4 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 150,
+          "25-30": 176,
+          "30-40": 240,
+          "40-50": 188,
+          "50-60": 120,
+          "60+": 51
+        },
+        "gender": {
+          "male": 671,
+          "female": 336
+        },
+        "location": {
+          "Mountain View, CA": 211,
+          "Sunnyvale, CA": 129,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 343
         }
       }
     }
