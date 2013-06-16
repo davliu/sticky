@@ -25,16 +25,19 @@ stickyApp.controller('CompanyCtrl', function CompanyCtrl($scope, $routeParams, a
       if (competition.type === "company" &&
           competition.competitors.indexOf($scope.companyId) !== -1) {
         $scope.competitionInfo.push({competition: competition,
+                                     id: i,
                                      info: getCompanyCompetitionInfo(competition, $scope.companyId)});
       }
       else if (competition.type === 'items' &&
                competition.competitors.length > 0) {
         (function() {
+          var j = i;
           var itemId = getWinningItemId(competition);
           var tmpCompetition = competition;
           angularFire(sticky.firebaseUrl("items/" + itemId), $scope, "item", {}).then(function(item) {
             if (item.company === $scope.companyId) {
               $scope.competitionInfo.push({competition: tmpCompetition,
+                                           id: j,
                                            info: getItemCompetitionInfo(tmpCompetition, itemId, item)});
             }
           });

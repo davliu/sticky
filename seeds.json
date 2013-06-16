@@ -2,7 +2,7 @@
   "companies": [
     {
       "name": "Jack in the Box",
-      "photo": "http://3.bp.blogspot.com/_mhHzlHCfJ2M/TMmukni5J8I/AAAAAAAABt4/9s60Wdi-Su8/s1600/JackInTheBoxLogo.png"
+      "photo": "images/JackInTheBoxLogo.png"
     },
     {
       "name": "Sean in the Box",
@@ -14,11 +14,11 @@
     },
     {
       "name": "Fu Lam Mum",
-      "photo": "http://media-cdn.tripadvisor.com/media/photo-s/03/2e/54/ab/fu-lam-mum.jpg"
+      "photo": "images/fu-lam-mum.png"
     },
     {
       "name": "Cooking Papa",
-      "photo": "http://www.mycookingpapa.com/CP.jpg"
+      "photo": "images/CookingPapa.png"
     }
 
   ],
@@ -74,7 +74,30 @@
         42, 84, 39
       ],
       "endsIn": "14 hours",
-      "finished": false
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 12,
+          "19-25": 28,
+          "25-30": 31,
+          "30-40": 42,
+          "40-50": 18,
+          "50-60": 12,
+          "60+": 22
+        },
+        "gender": {
+          "male": 80,
+          "female":85 
+        },
+        "location": {
+          "Mountain View, CA": 41,
+          "Sunnyvale, CA": 35,
+          "Burlingame, CA": 26,
+          "San Mateo, CA": 14,
+          "Palo Alto, CA": 22,
+          "San Francisco, CA": 27
+        }
+      }
     },
     {
       "name": "Best Restaurant in Nor-Cal",
@@ -88,11 +111,34 @@
         322, 122, 134, 211
       ],
       "endsIn": "5 days, 8 hours",
-      "finished": false
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 98,
+          "25-30": 176,
+          "30-40": 140,
+          "40-50": 128,
+          "50-60": 120,
+          "60+": 45
+        },
+        "gender": {
+          "male": 281,
+          "female": 505
+        },
+        "location": {
+          "Mountain View, CA": 111,
+          "Sunnyvale, CA": 89,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 265
+        }
+      }
     },
     {
       "name": "Best Chinese Restaurant in Bay Area",
-      "photo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCkJ9hmr0JYbNt8sK-hMZRlETclLtf9Rr21_tt6zjiYEjgMvi9Ww",
+      "photo": "images/chinese-restaurant.png",
       "category": "Food",
       "type": "company",
       "competitors": [
@@ -102,7 +148,30 @@
         885, 122
       ],
       "endsIn": "12 days, 9 hours",
-      "finished": false
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 150,
+          "25-30": 176,
+          "30-40": 240,
+          "40-50": 188,
+          "50-60": 120,
+          "60+": 51
+        },
+        "gender": {
+          "male": 671,
+          "female": 336
+        },
+        "location": {
+          "Mountain View, CA": 211,
+          "Sunnyvale, CA": 129,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 343
+        }
+      }
     }
   ]
 }
