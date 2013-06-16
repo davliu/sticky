@@ -1,0 +1,140 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type" />
+    <title></title>
+    <script src="https://api.intel.com:8081/js/v1/intel.cloudservices.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+    var URL = "data.txt";
+    var jsonstr;
+    var index = 0;
+    //method to read the manifest file and pick up items available for purchase
+    //items are displayed in a listbox
+    function displayvalues()
+    {
+        jQuery.support.cors = true;
+        $.ajax({
+            type: 'GET',
+            url: URL,
+            beforeSend: function ( xhr ) {
+                xhr.overrideMimeType("text/plain; charset=x-user-defined");
+            },
+            crossDomain: true,
+            success: successCallback,
+            error: errorCallback,
+            timeout:60000
+        });
+        function errorCallback(sMessage, sURL, sLine) {
+            alert("An error occured while downloading a file.\n" + sMessage +"\nURL:" + sURL + "\nLine:" + sLine)
+        }
+        function successCallback( data ) {
+            // Parse manifest
+            try
+            {
+
+                jsonstr = JSON.parse(data);
+                for (var key in jsonstr.Products)
+                {
+                    index++;
+                }
+                for(var j=0;j<index;j++)
+                {
+
+                    var a = document.createElement('option');
+                    a.textContent = jsonstr.Products[j].cartItem.cartlinename;
+                    a.value = jsonstr.Products[j].cartItem.cartlinename;
+                    document.getElementById("select").appendChild(a);
+                }
+
+                //jsonstr.Product1[0].name;
+            }catch(err)
+            {
+                alert(err.message);
+            }
+
+        }
+    }
+    // method to call the 2L authentication
+    function register()
+    {
+
+        var token ="";
+
+        intel.auth.init({
+                    client_id: '0aea680f877fa6f6beeb5e0024ab805e',
+                    secret_id: 'ca9d0b745b17be46',
+                    scope:     "user:details user:scope profile:full profile:full:write"
+                },
+                success = function ()
+                {
+
+                },
+                error = function() {}
+        );
+
+        intel.auth.login({
+                    redirect_uri: "urn:intel:identity:oauth:oob:async",
+                    provider: "",
+                    name: "myLoginWindow",
+                    specs: "location=1,status=1,scrollbars=1,width=700,height=400"
+                },
+
+
+                success = function () {
+                   alert("Sucess");
+                    myCart = new intel.commerce.Cart();
+                    cartLineId = myCart.addItem(
+                            {
+
+                                name: jsonstr.Products[index].cartItem.cartlinename,
+                                externalProductCode: jsonstr.Products[index].cartItem.externalproductcode,
+                                quantity: jsonstr.Products[index].cartItem.quantity,
+                                actualPrice: jsonstr.Products[index].cartItem.actualprice,
+                                commodityCode: jsonstr.Products[index].cartItem.commoditycode,
+                                listPrice: jsonstr.Products[index].cartItem.listprice
+                            }
+                    );
+
+                    try {
+                        myCart.save(successCallBack = function () { alert("cart saved to cloud sucessfully"); }, errorCallBack = function () { alert("Error in saving to cloud"); });
+
+                    } catch (err) {
+                        alert(err.message);
+                    }
+
+                    intel.commerce.getBillingProfile(success = function (billingProfile) {
+                        alert("Billed in " + billingProfile["data"].items[0].billingCountry);
+                    },
+
+                            errorCallback = function () { alert("Error in obtaining billing profile"); }
+
+                    );
+                    myCart.purchase(successPurchaseCallback = function () { alert("Successful purchase"); }, errorCallback = function (data) { alert("Error in purchase"); });
+
+                },
+                error = function () { alert("login failed"); }
+
+
+        );
+
+
+    }
+
+</script>
+<p></p>
+<p><button onclick="register()">Test</button>
+    <br />
+</p>
+<p>
+
+    <br />
+</p>
+<p><br />
+</p>
+</body>
+</html>
