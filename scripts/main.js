@@ -3,4 +3,9 @@ $(document).on('ready', function(){
     $('#main-menu > ul > li').removeClass('active');
     $(this).addClass('active');
   })
+
+  $('#mobile-menu .menu-icon a').click(function(e){
+    $('#mobile-menu').toggleClass('expanded');
+    e.preventDefault();
+  })
 });

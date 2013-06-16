@@ -18,7 +18,7 @@
     <script src="https://cdn.firebase.com/v0/firebase.js"></script>
     <script src="scripts/libs/angularfire.min.js"></script>
     <script src="scripts/libs/Chart.min.js"></script>
-    <!--<script type="text/javascript" src="scripts/libs/foundation.min.js"></script>-->
+    <script type="text/javascript" src="scripts/libs/foundation.min.js"></script>
     <script type="text/javascript" src="https://api.intel.com:8081/js/v1/intel.cloudservices.js"></script>
     <script type="text/javascript" data-app-id="habPxzWob50jsZYoCMN7aw" src="https://assets.yammer.com/platform/yam.js"></script>
   </head>
@@ -57,9 +57,22 @@
       </ul>
 
       <section class="top-bar-section">
+        <ul class="right">
+          <li class="divider"></li>
+          <li class="active"><a href="#/trending">Trending</a></li>
+          <li class="divider"></li>
+          <li><a href="#/profile">Profile</a></li>
+          <li class="divider"></li>
+          <li><a href="#/dashboard">Dashboard</a></li>
+          <li class="divider"></li>
+          <li><a href="#/companies">Companies</a></li>
+          <li class="divider"></li>
+          <li><a href="#/maps">Discover</a></li>
+          <li class="divider"></li>
+        </ul>
       </section>
     </nav>
-  </div>
+    </div>
     <div style="height: 100%;" ng-view> </div>
   </div>
 
