@@ -1,0 +1,13 @@
+#main-menu{
+  display:none;
+}
+
+#mobile-menu{ 
+  display: block;
+  margin: 0;
+}
+
+#main-content {
+  width: 100%;
+  left: 0;
+}
