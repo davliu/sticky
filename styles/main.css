@@ -109,12 +109,12 @@ h1,h2,h3,h4,h5 {
 
 .yammer {
   display: block;
-  background-image: url("../yammer-icon.png");
+  background-image: url("../images/yammer-icon.png");
   height: 35px;
   width: 35px;
   position: absolute;
-  right: 15px;
-  top: 0;
+  right: 18px;
+  top: 2px;
   z-index: 999;
 }
 
@@ -124,6 +124,7 @@ h1,h2,h3,h4,h5 {
 
 .competition-description {
   text-align: center;
+  min-height: 120px;
 }
 
 .chart {
