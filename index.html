@@ -16,9 +16,9 @@
     <script type="text/javascript" data-app-id="habPxzWob50jsZYoCMN7aw" src="https://assets.yammer.com/platform/yam.js"></script>
   </head>
 
-  <body ng-controller="IndexCtrl">
+  <body>
 
-  <div id="main-menu">
+  <div id="main-menu" ng-controller="IndexCtrl">
 
     <h1 id="menu-logo">Sticky</h1>
     <ul class="side-nav">
@@ -36,7 +36,7 @@
           }
         }); 
       </script>
-      <a href="" ng-click="switchIdStatus()">Sign {{getIdStatus()}}</a>
+      <li><a href="" onclick="switchIdStatus()">Sign {{getIdStatus()}}</a></li>
     </ul>
 
   </div>
