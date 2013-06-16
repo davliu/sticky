@@ -1,7 +1,20 @@
-<div>
+<h1>
   {{company.name}}
+</h1>
+
+<div>
+  <img ng-src="{{company.photo}}">
+  <h3>Competitions</h3>
+  <ul>
+    <li ng-repeat="competition in joinedCompetitions">
+      <img ng-src="{{competition.photo}}" width="100">
+      <div>{{competition.name}}</div>
+    </li>
+  </ul>
 </div>
 
+<!--
 <div>
 	<button ng-click="createItem()">Create Item</button>
 </div>
+-->
