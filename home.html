@@ -1,5 +1,6 @@
 <div>{{flash.get()}}</div>
 
+<!--
 <h2>Recommended For You</h2>
 
 <div>
@@ -23,9 +24,20 @@
     <a href="#/">Vote Now</a>
   </div>
 </div>
+-->
 
 <h2>Trending Competitions</h2>
 
+<div>
+  <div ng-repeat="competition in competitions">
+    <div>
+      <img ng-src="{{competition.photo}}" width="200">
+    </div>
+    <div>{{competition.name}}</div>
+    <a href="#/">Vote Now</a>
+  </div>
+</div>
+<!--
 <div>
   <div>
     <div>
@@ -47,3 +59,4 @@
     <a href="#/">Vote Now</a>
   </div>
 </div>
+-->
