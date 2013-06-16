@@ -10,11 +10,9 @@ stickyApp.factory("flash", function($rootScope) {
   
   return {
     set: function(message) {
-      console.log("setting");
       queue.push(message);
     },
     get: function(message) {
-      console.log("getting");
       return currentMessage;
     }
   };

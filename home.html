@@ -1,4 +1,4 @@
-<div class="alert-box success" ng-show="flash.get().length">
+<div class="alert-box success row" ng-show="flash.get().length">
   {{flash.get()}}
 </div>
 
@@ -28,17 +28,20 @@
 </div>
 -->
 
-<h2>Trending Competitions</h2>
+<div class="row">
+  <h2>Trending Competitions</h2>
 
-<div>
-  <div ng-repeat="competition in competitions">
-    <div>
-      <img ng-src="{{competition.photo}}" width="200">
+  <div id="competitions">
+    <div ng-repeat="competition in competitions" class="item">
+      <div>
+        <img ng-src="{{competition.photo}}" width="200">
+      </div>
+      <div>{{competition.name}}</div>
+      <a class="button" href="#/vote/{{$index}}">Vote Now</a>
     </div>
-    <div>{{competition.name}}</div>
-    <a href="#/vote/{{$index}}">Vote Now</a>
   </div>
 </div>
+
 <!--
 <div>
   <div>
