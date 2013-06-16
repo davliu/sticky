@@ -1,7 +1,7 @@
 <div class="row">
   <ul>
     <li class="large-12 columns page-title">{{competition.name}}</li>
-    <li class="small-4 large-3 columns">
+    <li class="small-6 large-3 columns">
       <div class="company-box" style="background-image:url({{competition.photo}});">
       </div>
     </li>
@@ -25,7 +25,7 @@
 <div class="row">
   <ul>
     <li class="large-12 columns page-title">The Competitiors</li>
-    <li class="small-4 large-3 columns" ng-repeat="competitor in filteredCompetitors" ng-click="selectCompetitor($index)">
+    <li class="small-6 large-3 columns" ng-repeat="competitor in filteredCompetitors" ng-click="selectCompetitor($index)">
       <a>
         <div class="company-box" style="background-image:url({{competitor.photo}});">
           <div class="company-name">
