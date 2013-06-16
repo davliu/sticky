@@ -36,6 +36,8 @@
   "competitions": [
     {
       "name": "Best Restaurant in Nor-Cal",
+      "photo": "http://www.ciiwa.com/images/panera.jpg",
+      "category": "food",
       "type": "company",
       "competitors": [
         0, 1, 2
@@ -46,6 +48,8 @@
     },
     {
       "name": "Best Meal in Chipotle",
+      "photo": "http://i.huffpost.com/gen/332205/thumbs/s-CHIPOTLE-MENU-large300.jpg",
+      "category": "food",
       "type": "items",
       "competitors": [
         0, 1, 2
