@@ -5,6 +5,7 @@ stickyApp.controller('CompanyCtrl', function CompanyCtrl($scope, $routeParams, a
   $scope.competitionInfo = [];
   $scope.companyIds = [];
   $scope.competitions = [];
+  $scope.items = [];
 
   angularFire(sticky.firebaseUrl("companies/" + $scope.companyId), $scope, "company", {});
 
@@ -16,34 +17,32 @@ stickyApp.controller('CompanyCtrl', function CompanyCtrl($scope, $routeParams, a
   });
 
   angularFire(sticky.firebaseUrl("competitions"), $scope, "competitions").then(function(competitions) {
-    var competition;
-    var i;
+    angularFire(sticky.firebaseUrl("items"), $scope, "items").then(function(items) {
+      var competition;
+      var i;
 
-    for (i=0; i<competitions.length; ++i) {
-      competition = competitions[i];
+      for (i=0; i<competitions.length; ++i) {
+        competition = competitions[i];
 
-      if (competition.type === "company" &&
-          competition.competitors.indexOf($scope.companyId) !== -1) {
-        $scope.competitionInfo.push({competition: competition,
-                                     id: i,
-                                     info: getCompanyCompetitionInfo(competition, $scope.companyId)});
-      }
-      else if (competition.type === 'items' &&
-               competition.competitors.length > 0) {
-        (function() {
-          var j = i;
+        if (competition.type === "company" &&
+            competition.competitors.indexOf($scope.companyId) !== -1) {
+          $scope.competitionInfo.push({competition: competition,
+                                       id: i,
+                                       info: getCompanyCompetitionInfo(competition, $scope.companyId)});
+        }
+        else if (competition.type === 'items' &&
+                 competition.competitors.length > 0) {
           var itemId = getWinningItemId(competition);
+          var item = $scope.items[itemId];
           var tmpCompetition = competition;
-          angularFire(sticky.firebaseUrl("items/" + itemId), $scope, "item", {}).then(function(item) {
-            if (item.company === $scope.companyId) {
-              $scope.competitionInfo.push({competition: tmpCompetition,
-                                           id: j,
-                                           info: getItemCompetitionInfo(tmpCompetition, itemId, item)});
-            }
-          });
-        })();
+          if (item.company === $scope.companyId) {
+            $scope.competitionInfo.push({competition: tmpCompetition,
+                                         id: i,
+                                         info: getItemCompetitionInfo(tmpCompetition, itemId, item)});
+          }
+        }
       }
-    }
+    });
   });
 
   function getCompanyCompetitionInfo(competition, companyId) {
