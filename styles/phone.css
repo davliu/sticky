@@ -19,3 +19,15 @@
 .company-box {
   height: 140px;
 }
+
+
+.evernote-btn {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 28px;
+  width: auto;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  margin-left: 0;
+}
