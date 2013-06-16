@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
@@ -39,37 +38,46 @@
         var actfm = { data: {}, env: "production" }, fb = null;
         //]]>
     </script>
-
     <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
     <script type="text/javascript" src="https://api.intel.com:8081/js/v1/intel.cloudservices.js"></script>
     </head>
 
     <script>
-    function login() {
-        var token = null;
-        intel.auth.init(
-            {
-                client_id: '0aea680f877fa6f6beeb5e0024ab805e',
-                secret_id: 'ca9d0b745b17be46',
-                scope: "user:details"
-            },
-            successCallback = function (data) {
-                console.log("init succeeded");
-                intel.auth.login({
-                    provider : "",
-                    name: "myLoginWindow",
-                        redirectUri: "http://localhost:8000/WebstormProjects/sticky/index.html",
-                    locale: "en"
-                }, function(data) {
-                    console.log("login succeeded");
-                }, function(error) {
-                    console.log("login failed");
-                });
-            },
-            errorCallback = function (data) {
-                console.log("init failed");
-            }
+    function initialize() {
+        var initOptions = {
+            client_id: '0aea680f877fa6f6beeb5e0024ab805e',
+            secret_id: 'ca9d0b745b17be46',
+            scope: "user:details user:scope profile:full billing:confirm profile:basic"
+        };
+        intel.auth.init(initOptions,
+                initSuccessCallback,
+                errorCallback
         );
+    }
+    function initSuccessCallback (data) {
+        console.log("init ok");
+        var authType = data.access_token.authentication_type;
+        console.log(authType);
+        loginOptions = {
+            provider: "",
+            name: "myLoginWindow",
+            redirectUri: "http://localhost:8000/WebstormProjects/sticky/index.html"
+        };
+        intel.auth.login(loginOptions,
+                loginSuccessCallback,
+                errorCallback);
+    }
+    function loginSuccessCallback (data) {
+        console.log("login ok");
+        var authType = data.access_token.authentication_type;
+        intel.profile.getUserProfile (getUserProfileSuccessCallback,
+                errorCallback);
+    }
+    function getUserProfileSuccessCallback (profile) {
+        console.log(profile);
+    }
+    function errorCallback (error) {
+        console.log("Error: " + error.desc);
     }
     </script>
 <body>
@@ -94,10 +102,8 @@
                                 Sign in to Sticky
                             </div>
                         </h2>
-                        <button onclick="login()"><img src="medium_btn_blue.png">
-                        </button>
-                        <div class="social-help-text sign-up">
-                            Sign in with Intel
+                        <div class="social-help-text sign-in">
+                            <img src="medium_btn_blue.png" onclick="initialize()">
                         </div>
                         <form accept-charset="UTF-8" action="/authentications/perform_signup.json" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="SXdGyzxzeEYX5LU4w4U1bCWdF5OjYdf0OrtU+oC5TPM=" /></div>
                             <input class="email" id="user_login" name="user[login]" placeholder="Email" size="30" tabindex="5" type="email" />

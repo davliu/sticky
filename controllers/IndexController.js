@@ -7,4 +7,5 @@ function logout () {
             console.log("logout fail")
         }
     );
+    window.close();
 };
