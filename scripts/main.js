@@ -8,4 +8,10 @@ $(document).on('ready', function(){
     $('#mobile-menu').toggleClass('expanded');
     e.preventDefault();
   })
+
+  $('#mobile-menu .top-bar-section').click(function(e){
+    $('#mobile-menu').toggleClass('expanded');
+    //e.preventDefault();
+  })
+
 });
