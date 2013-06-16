@@ -37,3 +37,7 @@ body { height: 100%; position: relative; overflow: hidden; background-image:url(
   width: 80%; min-height: 100%; max-height: 100%;
   overflow-y: auto;
 }
+
+.row {
+  margin-top: 1.5em;
+}
