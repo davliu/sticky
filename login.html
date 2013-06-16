@@ -44,40 +44,37 @@
 
     <script>
     function initialize() {
-        var initOptions = {
-            client_id: '0aea680f877fa6f6beeb5e0024ab805e',
-            secret_id: 'ca9d0b745b17be46',
-            scope: "user:details user:scope profile:full billing:confirm profile:basic"
-        };
-        intel.auth.init(initOptions,
-                initSuccessCallback,
-                errorCallback
+        intel.auth.init({
+                    client_id: '0aea680f877fa6f6beeb5e0024ab805e',
+                    secret_id: 'ca9d0b745b17be46',
+                    scope:     "user:details user:scope profile:full profile:full:write"
+                },
+                success = function ()
+                {
+                   console.log("init ok");
+                },
+                error = function() {
+                    console.log("init error");
+                }
+
         );
-    }
-    function initSuccessCallback (data) {
-        console.log("init ok");
-        var authType = data.access_token.authentication_type;
-        console.log(authType);
-        loginOptions = {
+
+        intel.auth.login({
+            redirect_uri: "urn:intel:identity:oauth:oob:async",
+//            redirect_uri: "http://localhost:8000/WebstormProjects/sticky/index.html#/",
             provider: "",
             name: "myLoginWindow",
-            redirectUri: "http://localhost:8000/WebstormProjects/sticky/index.html"
-        };
-        intel.auth.login(loginOptions,
-                loginSuccessCallback,
-                errorCallback);
-    }
-    function loginSuccessCallback (data) {
-        console.log("login ok");
-        var authType = data.access_token.authentication_type;
-        intel.profile.getUserProfile (getUserProfileSuccessCallback,
-                errorCallback);
-    }
-    function getUserProfileSuccessCallback (profile) {
-        console.log(profile);
-    }
-    function errorCallback (error) {
-        console.log("Error: " + error.desc);
+//            specs: "location=1,status=1,scrollbars=1,width=700,height=400"
+        },
+                success = function (userDetails)
+                {
+                        window.location = "http://davliu.github.io/sticky/#/";
+                },
+                error = function() {
+                    console.log("login error");
+                }
+
+        );
     }
     </script>
 <body>
