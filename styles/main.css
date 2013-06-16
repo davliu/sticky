@@ -105,12 +105,12 @@ body { height: 100%; position: relative; overflow: hidden; background-image:url(
 
 .yammer {
   display: block;
-  background-image: url("../yammer-icon.png");
+  background-image: url("../images/yammer-icon.png");
   height: 35px;
   width: 35px;
   position: absolute;
-  right: 15px;
-  top: 0;
+  right: 18px;
+  top: 2px;
   z-index: 999;
 }
 
