@@ -6,7 +6,7 @@ stickyApp.controller('CompanyCtrl', function CompanyCtrl($scope, $routeParams, a
   $scope.companyId = $routeParams.companyId;
   $scope.companyIds = [];
 
-  angularFire(sticky.firebaseCompanyUrl($scope.companyId), $scope, "company", {});
+  angularFire(sticky.firebaseUrl("companies/" + $scope.companyId), $scope, "company", {});
 
   promise = angularFire(sticky.firebaseCompaniesUrl, $scope, "companies");
   promise.then(function(companies) {

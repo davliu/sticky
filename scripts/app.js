@@ -2,8 +2,8 @@ var stickyApp = angular.module('stickyApp', ['firebase']);
 var sticky = sticky || {};
 sticky.firebase = new Firebase("stickyapp.firebaseIO.com");
 sticky.firebaseCompaniesUrl = "https://stickyapp.firebaseIO.com/companies";
-sticky.firebaseCompanyUrl = function(companyId) {
-	return "https://stickyapp.firebaseIO.com/companies/" + companyId;
+sticky.firebaseUrl = function(rsrc) {
+	return "https://stickyapp.firebaseIO.com/" + rsrc;
 }
 
 stickyApp.config(function($routeProvider) {
@@ -16,5 +16,5 @@ stickyApp.config(function($routeProvider) {
   when('/company/:companyId', {controller: "CompanyCtrl", templateUrl: "company/company_show.html"}).
   when("/company", {controller: "CompanyCtrl", templateUrl: "company/company_show_all.html"}).
   when("/trending", {controller: "TrendingCtrl", templateUrl: "trending.html"}).
-  when("/vote/:competitionName", {controller: "VoteCtrl", templateUrl: "vote.html"});
+  when("/vote/:competitionId", {controller: "VoteCtrl", templateUrl: "vote.html"});
 });
