@@ -20,6 +20,9 @@
   height: 140px;
 }
 
+.company-box img {
+  max-height: 90px;
+}
 
 .evernote-btn {
   display: block;
