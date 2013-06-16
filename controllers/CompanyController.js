@@ -86,4 +86,9 @@ stickyApp.controller('CompanyCtrl', function CompanyCtrl($scope, $routeParams, a
 
     return winningItemId;
   }
+
+  // $scope.$on('$viewContentLoaded', function(){
+  //   console.log($('.company-box').width());
+  //   $('.company-box').css('height', $('.company-box').width()+25+'px');
+  // });
 });
