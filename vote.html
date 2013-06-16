@@ -1,16 +1,19 @@
 <h2>{{competition.name}}</h2>
 
+Category: {{competition.category}}
+
+<div>
+  <img ng-src="{{competition.photo}}" width="200">
+</div>
+
 {{competition}}
 
-Category: {{competition.category}}
-Category: {{competition.category}}
-Category: {{competition.category}}
-
 <ul>
-  <li><img src="http://www.chipotle.com/en-us/assets/images/menu/menu_burrito.png"></li>
-  <li><img src="http://www.chipotle.com/en-us/assets/images/menu/menu_burrito_bowl.png"></li>
-  <li><img src="http://www.chipotle.com/en-us/assets/images/menu/menu_crispy_tacos.png"></li>
-  <li><img src="http://www.chipotle.com/en-us/assets/images/menu/menu_salad.png"></li>
+  <li ng-repeat="competitor in competitors">
+    <img ng-src="{{competitor.photo}}">
+    <span>{{competitor.name}}</span>
+    <span>Current Votes: {{competition['votes'][$index]}}</span>
+  </li>
 </ul>
 
 <button ng-click="submitVote()">Vote!</button>
