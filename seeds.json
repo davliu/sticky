@@ -88,8 +88,8 @@
 
   "competitions": [
     {
-      "name": "Best Meal at Chipotle",
-      "photo": "images/chipotle-restaurant.jpg",
+      "name": "Best Meal at Jack in the Box",
+      "photo": "images/jackinbox-competition.png",
       "category": "Food",
       "type": "items",
       "competitors": [
