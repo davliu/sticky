@@ -2,12 +2,9 @@ var sticky = sticky || {};
 
 
 stickyApp.controller('CompanyCtrl', function CompanyCtrl($scope, $routeParams, angularFire) {
-
   $scope.companyId = $routeParams.companyId;
 
-  $scope.company = angularFire(sticky.firebaseCompanyRef($scope.companyId), $scope, "company");
-
-  console.log($scope.company.then());
+  angularFire(sticky.firebaseCompanyUrl($scope.companyId), $scope, "company", {});
 
   $scope.createCompany = function() {
     sticky.firebaseCompany.push(
@@ -27,5 +24,4 @@ stickyApp.controller('CompanyCtrl', function CompanyCtrl($scope, $routeParams, a
         });
     }
   };
-
 });
