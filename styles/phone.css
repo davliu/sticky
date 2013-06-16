@@ -1,0 +1,33 @@
+#main-menu{
+  display:none;
+}
+
+#mobile-menu{ 
+  display: block;
+  position: fixed; left: 0; top: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 99;
+}
+
+#main-content {
+  width: 100%;
+  left: 0;
+  padding-top: 45;
+}
+
+.company-box {
+  height: 140px;
+}
+
+
+.evernote-btn {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 28px;
+  width: auto;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  margin-left: 0;
+}

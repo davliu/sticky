@@ -1,0 +1,536 @@
+{
+  "companies": [
+    {
+      "geodata": [37.402111, -122.078803],
+      "name": "Jack in the Box",
+      "photo": "images/JackInTheBoxLogo.png"
+    },
+    {
+      "geodata": [37.380439, -122.074177],
+      "name": "In-N-Out Burger",
+      "photo": "images/In-N-Out_Burger.png"
+    },
+    {
+      "geodata": [37.3903337, -122.0934948],
+      "name": "Chipotle",
+      "photo": "images/chipotle.png"
+    },
+    {
+      "geodata": [37.394306, -122.078532],
+      "name": "Fu Lam Mum",
+      "photo": "images/fu-lam-mum.png"
+    },
+    {
+      "name": "Cooking Papa",
+      "photo": "images/CookingPapa.png"
+    },
+    {
+      "name": "L'Oreal",
+      "photo": "images/loreal.jpg"
+    }
+  ],
+
+  "items": [
+    {
+      "name": "Jack's Big Stack",
+      "photo": "images/Jacks-Big-Stack.png",
+      "company": 0
+    },
+    {
+      "name": "Sirloin Cheeseburger",
+      "photo": "images/Sirloin-Cheeseburger.png",
+      "company": 0
+    },
+    {
+      "name": "Grilled Chicken Salad",
+      "photo": "images/GrilledChickenSalad.png",
+      "company": 0
+    },
+    {
+      "name": "Double-Double Cheeseburger",
+      "photo": "images/double-cheeseburger.jpg",
+      "company": 1
+    },
+    {
+      "name": "L'Oreal Paris Infallible",
+      "photo": "images/loreal-infallible.jpg",
+      "company": 5
+    },
+    {
+      "name": "L'Oreal Paris Colour",
+      "photo": "images/loreal-colour.jpg",
+      "company": 5
+    },
+    {
+      "name": "L'Oreal Paris Riche",
+      "photo": "images/loreal-riche.jpg",
+      "company": 5
+    }
+  ],
+
+  "coupons": [
+    {
+      "provider": "Jack in the Box",
+      "photo": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkLBMOzRZLlFx-F1-7jcfbUqhmgsFHJ-O_5vibnjmc_ugWh_JapA"
+    },
+    {
+      "provider": "Jack in the Box",
+      "photo": "http://3.bp.blogspot.com/_EA90Ak61ioY/SxVmMz-wKoI/AAAAAAAAByg/rgHeVOvgESU/s1600/JACK_FREESourdoughJack.jpg"
+    },
+    {
+      "provider": "Jack in the Box",
+      "photo": "http://3.bp.blogspot.com/_EA90Ak61ioY/SxVmMz-wKoI/AAAAAAAAByg/rgHeVOvgESU/s1600/JACK_FREESourdoughJack.jpg"
+    },
+    {
+      "provider": "Chipotle",
+      "photo": "http://3.bp.blogspot.com/_EA90Ak61ioY/SxVmMz-wKoI/AAAAAAAAByg/rgHeVOvgESU/s1600/JACK_FREESourdoughJack.jpg"
+    }
+  ],
+
+  "competitions": [
+    {
+      "name": "Best Meal at Jack in the Box",
+      "photo": "images/jackinbox-competition.png",
+      "category": "Food",
+      "type": "items",
+      "competitors": [
+        0, 1, 2
+      ],
+      "votes": [
+        42, 84, 39
+      ],
+      "endsIn": "14 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 12,
+          "19-25": 28,
+          "25-30": 31,
+          "30-40": 42,
+          "40-50": 18,
+          "50-60": 12,
+          "60+": 22
+        },
+        "gender": {
+          "male": 80,
+          "female": 85
+        },
+        "location": {
+          "Mountain View, CA": 41,
+          "Sunnyvale, CA": 35,
+          "Burlingame, CA": 26,
+          "San Mateo, CA": 14,
+          "Palo Alto, CA": 22,
+          "San Francisco, CA": 27
+        }
+      }
+    },
+    {
+      "name": "Best Restaurant in Nor-Cal",
+      "photo": "images/panera.jpg",
+      "category": "Food",
+      "type": "company",
+      "competitors": [
+        0, 1, 2, 3, 4
+      ],
+      "votes": [
+        322, 122, 134, 211
+      ],
+      "endsIn": "5 days, 8 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 98,
+          "25-30": 176,
+          "30-40": 140,
+          "40-50": 128,
+          "50-60": 120,
+          "60+": 45
+        },
+        "gender": {
+          "male": 281,
+          "female": 505
+        },
+        "location": {
+          "Mountain View, CA": 111,
+          "Sunnyvale, CA": 89,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 265
+        }
+      }
+    },
+    {
+      "name": "Best Chinese Restaurant in Bay Area",
+      "photo": "images/chinese-restaurant.png",
+      "category": "Food",
+      "type": "company",
+      "competitors": [
+        3, 4
+      ],
+      "votes": [
+        885, 122
+      ],
+      "endsIn": "12 days, 9 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 150,
+          "25-30": 176,
+          "30-40": 240,
+          "40-50": 188,
+          "50-60": 120,
+          "60+": 51
+        },
+        "gender": {
+          "male": 671,
+          "female": 336
+        },
+        "location": {
+          "Mountain View, CA": 211,
+          "Sunnyvale, CA": 129,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 343
+        }
+      }
+    },
+    {
+      "name": "Best L'Oreal Makeup",
+      "photo": "images/loreal.jpg",
+      "category": "Cosmetics",
+      "type": "items",
+      "competitors": [
+        4, 5, 6
+      ],
+      "votes": [
+        42, 84, 39
+      ],
+      "endsIn": "14 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 12,
+          "19-25": 28,
+          "25-30": 31,
+          "30-40": 42,
+          "40-50": 18,
+          "50-60": 12,
+          "60+": 22
+        },
+        "gender": {
+          "male": 126,
+          "female": 39
+        },
+        "location": {
+          "Mountain View, CA": 41,
+          "Sunnyvale, CA": 35,
+          "Burlingame, CA": 26,
+          "San Mateo, CA": 14,
+          "Palo Alto, CA": 22,
+          "San Francisco, CA": 27
+        }
+      }
+    },
+    {
+      "name": "Best Salad at Jack in the Box",
+      "photo": "images/salad.jpg",
+      "category": "Food",
+      "type": "items",
+      "competitors": [
+        2
+      ],
+      "votes": [
+        39
+      ],
+      "endsIn": "5 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 12,
+          "19-25": 28,
+          "25-30": 31,
+          "30-40": 42,
+          "40-50": 18,
+          "50-60": 12,
+          "60+": 22
+        },
+        "gender": {
+          "male": 80,
+          "female": 85
+        },
+        "location": {
+          "Mountain View, CA": 41,
+          "Sunnyvale, CA": 35,
+          "Burlingame, CA": 26,
+          "San Mateo, CA": 14,
+          "Palo Alto, CA": 22,
+          "San Francisco, CA": 27
+        }
+      }
+    },
+    {
+      "name": "Best Dim Sum Place in Mountain View",
+      "photo": "images/dimsum-box.jpg",
+      "category": "Food",
+      "type": "company",
+      "competitors": [
+        3
+      ],
+      "votes": [
+        885
+      ],
+      "endsIn": "5 days, 20 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 150,
+          "25-30": 176,
+          "30-40": 240,
+          "40-50": 188,
+          "50-60": 120,
+          "60+": 51
+        },
+        "gender": {
+          "male": 671,
+          "female": 336
+        },
+        "location": {
+          "Mountain View, CA": 211,
+          "Sunnyvale, CA": 129,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 343
+        }
+      }
+    },
+    {
+      "name": "Best LG TV",
+      "photo": "images/lg-tv.jpg",
+      "category": "Electronics",
+      "type": "items",
+      "competitors": [
+        4
+      ],
+      "votes": [
+        42
+      ],
+      "endsIn": "11 day, 10 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 12,
+          "19-25": 28,
+          "25-30": 31,
+          "30-40": 42,
+          "40-50": 18,
+          "50-60": 12,
+          "60+": 22
+        },
+        "gender": {
+          "male": 126,
+          "female": 39
+        },
+        "location": {
+          "Mountain View, CA": 41,
+          "Sunnyvale, CA": 35,
+          "Burlingame, CA": 26,
+          "San Mateo, CA": 14,
+          "Palo Alto, CA": 22,
+          "San Francisco, CA": 27
+        }
+      }
+    },
+    {
+      "name": "Best Tower Defense Game on iPad",
+      "photo": "images/kingdom-rush.jpg",
+      "category": "Games",
+      "type": "company",
+      "competitors": [
+        3
+      ],
+      "votes": [
+        885
+      ],
+      "endsIn": "12 days, 21 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 150,
+          "25-30": 176,
+          "30-40": 240,
+          "40-50": 188,
+          "50-60": 120,
+          "60+": 51
+        },
+        "gender": {
+          "male": 671,
+          "female": 336
+        },
+        "location": {
+          "Mountain View, CA": 211,
+          "Sunnyvale, CA": 129,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 343
+        }
+      }
+    },
+    {
+      "name": "Best Laptops",
+      "photo": "images/macbook.jpg",
+      "category": "Electronics",
+      "type": "items",
+      "competitors": [
+        4
+      ],
+      "votes": [
+        42
+      ],
+      "endsIn": "9 day, 1 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 12,
+          "19-25": 28,
+          "25-30": 31,
+          "30-40": 42,
+          "40-50": 18,
+          "50-60": 12,
+          "60+": 22
+        },
+        "gender": {
+          "male": 126,
+          "female": 39
+        },
+        "location": {
+          "Mountain View, CA": 41,
+          "Sunnyvale, CA": 35,
+          "Burlingame, CA": 26,
+          "San Mateo, CA": 14,
+          "Palo Alto, CA": 22,
+          "San Francisco, CA": 27
+        }
+      }
+    },
+    {
+      "name": "Best Farmer's Market in Bay Area",
+      "photo": "images/farmers-market.jpeg",
+      "category": "Food",
+      "type": "company",
+      "competitors": [
+        3
+      ],
+      "votes": [
+        885
+      ],
+      "endsIn": "12 days, 8 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 150,
+          "25-30": 176,
+          "30-40": 240,
+          "40-50": 188,
+          "50-60": 120,
+          "60+": 51
+        },
+        "gender": {
+          "male": 671,
+          "female": 336
+        },
+        "location": {
+          "Mountain View, CA": 211,
+          "Sunnyvale, CA": 129,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 343
+        }
+      }
+    },
+    {
+      "name": "Best Bike",
+      "photo": "images/bike.jpg",
+      "category": "Sporting Goods",
+      "type": "company",
+      "competitors": [
+        3
+      ],
+      "votes": [
+        885
+      ],
+      "endsIn": "3 days, 8 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 150,
+          "25-30": 176,
+          "30-40": 240,
+          "40-50": 188,
+          "50-60": 120,
+          "60+": 51
+        },
+        "gender": {
+          "male": 671,
+          "female": 336
+        },
+        "location": {
+          "Mountain View, CA": 211,
+          "Sunnyvale, CA": 129,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 343
+        }
+      }
+    },
+    {
+      "name": "Best Cellphone",
+      "photo": "images/phone.jpeg",
+      "category": "Electronics",
+      "type": "company",
+      "competitors": [
+        3
+      ],
+      "votes": [
+        885
+      ],
+      "endsIn": "2 days, 4 hours",
+      "finished": false,
+      "statistics": {
+        "age": {
+          "0-18": 82,
+          "19-25": 150,
+          "25-30": 176,
+          "30-40": 240,
+          "40-50": 188,
+          "50-60": 120,
+          "60+": 51
+        },
+        "gender": {
+          "male": 671,
+          "female": 336
+        },
+        "location": {
+          "Mountain View, CA": 211,
+          "Sunnyvale, CA": 129,
+          "Burlingame, CA": 76,
+          "San Mateo, CA": 112,
+          "Palo Alto, CA": 136,
+          "San Francisco, CA": 343
+        }
+      }
+    }
+  ]
+}

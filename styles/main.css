@@ -1,0 +1,123 @@
+html { height: 100%; }
+body { height: 100%; position: relative; overflow: hidden; background-image:url('../gplaypattern.png');}
+
+#main-menu{
+  position: absolute; left: 0; top: 0;
+  width: 20%; height: 100%; padding: 1em;
+  color: #ddd; background-color: #333;
+  box-shadow: 1px 0px 10px 1px #333;
+  text-align: right; z-index: 5;
+}
+
+#mobile-menu{ display: none; }
+
+#main-menu #menu-logo{
+  color: #ddd;
+  font-family: 'Lily Script One', cursive;
+  text-shadow: 2px 2px #555;
+  /*transition: all 300ms ease;*/
+}
+
+#main-menu #menu-logo:hover{
+  color: #eee;
+  transform:rotate(6deg);
+  -ms-transform:rotate(6deg); /* IE 9 */
+  -webkit-transform:rotate(6deg); /* Safari and Chrome */
+}
+
+#main-menu ul li a{
+  color: #ddd;
+}
+
+#main-menu ul li a:hover{
+  color: #eee; font-weight: 700;
+}
+
+#main-content{
+  position: absolute; left: 20%;
+  width: 80%; min-height: 100%; max-height: 100%;
+  overflow-y: auto;
+}
+
+.row {
+  margin-top: 2em;
+}
+
+.page-title {
+  font-family: 'Lily Script One', cursive;
+  font-size: 2.2em;
+  padding: 0 0.3em;
+  margin-bottom: 1em;
+}
+
+.company-title {
+  text-align: center;
+}
+
+.voting-box {
+  min-height: 400px;
+}
+
+.company-box {
+  position: relative;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 0 1.2em 0;
+  border: 1px solid #333;
+  opacity: 0.95;
+  box-shadow: 3px 3px 10px 1px #999;
+}
+.company-box:hover {
+  opacity: 1;
+}
+
+.company-name {
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  font-weight: 700;
+  opacity: 0.95;
+}
+
+.item {
+  width: 220px;
+  margin: 10px;
+  float: left;
+}
+
+
+.coupon-title {
+  text-align: center;
+  display: block;
+}
+
+.evernote-btn {
+  display: block;
+  background-image: url("../evernote.png");
+  height: 40px;
+  width: 183px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.yammer {
+  display: block;
+  background-image: url("../yammer-icon.png");
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  z-index: 999;
+}
+
+.voted-box {
+  color: white;
+}
+
+.competition-description {
+  text-align: center;
+}

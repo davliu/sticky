@@ -1,0 +1,4 @@
+components/*
+.DS_Store
+.*.swp
+.idea

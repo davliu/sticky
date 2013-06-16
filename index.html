@@ -1,0 +1,86 @@
+<html ng-app="stickyApp">
+  <head>
+
+    <meta name="viewport" content="width=device-width, maximum-scale=2.0, initial-scale=2.0, user-scalable=yes">
+
+    <link rel="stylesheet" href="styles/libs/normalize.css">
+    <link rel="stylesheet" href="styles/libs/foundation.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/maps.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" media="only screen and (max-width: 640px)" href="styles/phone.css">
+    <link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 2)" href="styles/phone.css">
+
+
+    <script type="text/javascript" src="https://api.intel.com:8081/js/location/v2/intelmaps.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+    <script src="scripts/libs/angularfire.min.js"></script>
+    <script src="scripts/libs/Chart.min.js"></script>
+    <script type="text/javascript" src="scripts/libs/foundation.min.js"></script>
+    <script type="text/javascript" src="https://api.intel.com:8081/js/v1/intel.cloudservices.js"></script>
+    <script type="text/javascript" data-app-id="hqarTIAKSuST5V6z65WQ" src="https://assets.yammer.com/platform/yam.js"></script>
+  </head>
+  <body>
+
+  <div id="main-menu">
+
+    <h1 id="menu-logo">Sticky</h1>
+    <ul class="side-nav">
+      <li class="active"><a href="#/">Home</a></li>
+      <li><a href="#/coupon">Coupon</a></li>
+      <li><a href="#/dashboard">Dashboard</a></li>
+      <li><a href="#/companies">Companies</a></li>
+      <li><a href="#/maps">Discover</a></li>
+      <li><a href="" onclick="logout()">Sign out</a></li>
+      <li><span id="yammer-login"></span></li>
+      <script>
+        yam.connect.loginButton('#yammer-login', function (resp) {
+          if (resp.authResponse) {
+            document.getElementById('yammer-login').innerHTML = 'Yammer! Logined';
+          }
+        });
+      </script>
+    </ul>
+
+  </div>
+  <div id="main-content">
+    <nav id="mobile-menu" class="top-bar">
+      <ul class="title-area">
+        <li class="name"> <h1><a href="#"> Sticky  </a></h1> </li>
+  <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class="divider"></li>
+          <li><a href="#/profile">Profile</a></li>
+          <li class="divider"></li>
+          <li><a href="#/dashboard">Dashboard</a></li>
+          <li class="divider"></li>
+          <li><a href="#/companies">Companies</a></li>
+          <li class="divider"></li>
+          <li><a href="#/maps">Discover</a></li>
+          <li class="divider"></li>
+        </ul>
+      </section>
+    </nav>
+    <div style="height: 100%;" ng-view> </div>
+  </div>
+
+  </body>
+
+  <script src="scripts/app.js"></script>
+  <script src="controllers/HomeController.js"></script>
+  <script src="controllers/DashboardController.js"></script>
+  <script src="controllers/CouponController.js"></script>
+  <script src="controllers/CompanyController.js"></script>
+  <script src="controllers/VoteController.js"></script>
+  <script src="controllers/MapController.js"></script>
+  <script src="factories/flash.js"></script>
+  <script src="factories/intelmap.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+  <script src="controllers/IndexController.js"></script>
+</html>

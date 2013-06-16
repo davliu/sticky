@@ -1,0 +1,29 @@
+<div class="row">
+  <ul>
+    <li class="large-12 columns page-title">
+      <div class="company-title">
+        <div> {{company.name}} </div>
+        <img ng-src="{{company.photo}}">
+      </div>
+    </li>
+    <li class="small-6 large-3 columns" ng-repeat="c in competitionInfo">
+      <a href="#/vote/{{c.id}}">
+        <div class="company-box" style="background-image:url({{ c.competition.photo }});">
+          <div class="company-name"> {{ c.competition.name }} </div>
+        </div>
+      </a>
+
+      <div>
+        <ng-switch on="c.competition.type">
+          <div class="competition-description" ng-switch-when="company">
+            Ranked #{{c.info.rank}}, {{c.info.votes}} votes
+          </div>
+          <div class="competition-description" ng-switch-when="items">
+            <div>{{c.info.itemName}}</div>
+            <div>Ranked #1, {{c.info.votes}} votes</div>
+          </div>
+        </ng-switch>
+      </div>
+    </li>
+  </ul>
+</div>

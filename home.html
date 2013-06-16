@@ -1,0 +1,21 @@
+<div class="alert-box success row" ng-show="flash.get().length">
+  {{flash.get()}}
+</div>
+
+<div class="row">
+  <ul>
+    <li class="large-12 columns page-title"> Trending Competitions </li>
+    <li class="small-6 large-3 columns" ng-repeat="competition in competitions" class="item">
+      <a class="yammer" href="" ng-click="yammerCompetition($index)"></a>
+      <a href="#/vote/{{$index}}">
+        <div class="company-box" style="background-image:url({{ competition.photo }});">
+          <div class="company-name"> {{ competition.name }} </div>
+        </div>
+      </a>
+      <div class="competition-description">
+        <div>Ends in {{competition.endsIn}}.</div>
+        <a class="button" href="#/vote/{{$index}}">Vote Now</a>
+      </div>
+    </li>
+  </ul>
+</div>

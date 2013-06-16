@@ -1,0 +1,50 @@
+<div class="row">
+  <ul>
+    <li class="large-12 columns page-title">{{competition.name}}</li>
+    <li class="small-6 large-3 columns">
+      <div class="company-box" style="background-image:url({{competition.photo}});">
+      </div>
+    </li>
+    <li class="small-8 large-9 columns">
+      <table>
+        <tbody>
+          <tr>
+            <td><b>Category</b></td>
+            <td>{{competition.category}}</td>
+          </tr>
+          <tr>
+            <td><b>Completed</b></td>
+            <td>{{competition.finished && 'Yes' || 'No'}}</td>
+          </tr>
+          <tr>
+            <td><b>Ends in</b></td>
+            <td>{{competition.endsIn}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+  </ul>
+</div>
+
+<div class="row">
+  <ul>
+    <li class="large-12 columns page-title">The Competitiors</li>
+    <li class="small-6 large-3 columns" ng-repeat="competitor in filteredCompetitors" ng-click="selectCompetitor($index)">
+      <a>
+        <div class="company-box" style="background-image:url({{competitor.photo}});">
+          <div class="company-name">
+            {{competitor.name}} ({{competition.votes[$index]}}) <div ng-show="$index == selectedIndex" class="panel callout voted-box">Chosen</div>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="row">
+  <div data-alert class="alert-box alert" ng-show="voteError">
+    Please vote before continuing.
+    <a href="#" class="close">&times;</a>
+  </div>
+  <button ng-click="submitVote()">Vote!</button>
+</div>
