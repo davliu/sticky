@@ -36,6 +36,6 @@ stickyApp.controller('VoteCtrl', function VoteCtrl($scope, $routeParams, $locati
     $scope.competition.votes[$scope.selectedIndex] = voteCount + 1;
 
     $location.path("/");
-    flash.set("Thanks for voting!");
+    flash.set("Thanks for voting for " + $scope.competition.name + " !");
   };
 });
