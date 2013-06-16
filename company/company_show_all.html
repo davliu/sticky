@@ -1,7 +1,14 @@
+
 <div class="row">
+
   <ul>
-    <li class="large-4 columns" ng-repeat="id in companyIds">
-      <a href="#/company/{{id}}">{{companies[id].name}}</a>
+    <li class="large-12 columns page-title"> Companies </li>
+    <li class="small-4 large-3 columns" ng-repeat="id in companyIds">
+      <a href="#/company/{{id}}">
+        <div class="company-box" style="background-image:url({{ companies[id].photo }});">
+          <div class="company-name"> {{ companies[id].name }} </div>
+        </div>
+      </a>
     </li>
   </ul>
 </div>
