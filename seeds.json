@@ -2,7 +2,7 @@
   "companies": [
     {
       "name": "Jack in the Box",
-      "photo": "http://3.bp.blogspot.com/_mhHzlHCfJ2M/TMmukni5J8I/AAAAAAAABt4/9s60Wdi-Su8/s1600/JackInTheBoxLogo.png"
+      "photo": "images/JackInTheBoxLogo.png"
     },
     {
       "name": "Sean in the Box",
@@ -14,11 +14,11 @@
     },
     {
       "name": "Fu Lam Mum",
-      "photo": "http://media-cdn.tripadvisor.com/media/photo-s/03/2e/54/ab/fu-lam-mum.jpg"
+      "photo": "images/fu-lam-mum.png"
     },
     {
       "name": "Cooking Papa",
-      "photo": "http://www.mycookingpapa.com/CP.jpg"
+      "photo": "images/CookingPapa.png"
     }
 
   ],
@@ -138,7 +138,7 @@
     },
     {
       "name": "Best Chinese Restaurant in Bay Area",
-      "photo": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCkJ9hmr0JYbNt8sK-hMZRlETclLtf9Rr21_tt6zjiYEjgMvi9Ww",
+      "photo": "images/chinese-restaurant.png",
       "category": "Food",
       "type": "company",
       "competitors": [
