@@ -1,1 +1,23 @@
-<h2>Dashboard</h2>
+<div class="row">
+  <ul>
+    <li class="large-12 columns page-title">My Dashboard</li>
+  </ul>
+</div>
+
+<div class="row">
+  <h3>My Competitions</h3>
+  <dl class="sub-nav">
+    <dd ng-repeat="competition in filteredCompetitions" class="{{$index == selectedIndex && 'active' || ''}}"><a ng-click="renderCharts($index)">{{competition.name}}</a></dd>
+  </ul>
+</div>
+
+<div class="row" ng-show="selectedIndex != -1">
+  <h5>Age Distribution</h5>
+  <canvas id="ageCanvas" height="450" width="600"></canvas>
+
+  <h5>Gender Distribution</h5>
+  <canvas id="genderCanvas" height="450" width="600"></canvas>
+
+  <h5>Location Distribution</h5>
+  <canvas id="locationCanvas" height="450" width="600"></canvas>
+</div>

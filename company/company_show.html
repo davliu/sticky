@@ -1,21 +1,26 @@
-<h1>
-  {{company.name}}
-</h1>
-
-<div>
-  <img ng-src="{{company.photo}}">
-  <h3>Competitions</h3>
+<div class="row">
   <ul>
-    <li ng-repeat="c in competitionInfo">
-      <img ng-src="{{c.competition.photo}}" width="100">
+    <li class="large-12 columns page-title">
+      <div class="company-title">
+        <div> {{company.name}} </div>
+        <img ng-src="{{company.photo}}">
+      </div>
+    </li>
+    <li class="small-6 large-3 columns" ng-repeat="c in competitionInfo">
+      <a href="#/vote/{{c.id}}">
+        <div class="company-box" style="background-image:url({{ c.competition.photo }});">
+          <div class="company-name"> {{ c.competition.name }} </div>
+        </div>
+      </a>
+
       <div>
-        <h5>{{c.competition.name}}</h5>
         <ng-switch on="c.competition.type">
-          <div ng-switch-when="company">
-            Ranked #{{c.info.rank}}, <span class="votes">{{c.info.votes}}</span> votes
+          <div class="competition-description" ng-switch-when="company">
+            Ranked #{{c.info.rank}}, {{c.info.votes}} votes
           </div>
-          <div ng-switch-when="items">
-            <span class="product">{{c.info.itemName}}</span> ranked #1, <span class="votes">{{c.info.votes}}</span> votes
+          <div class="competition-description" ng-switch-when="items">
+            <div>{{c.info.itemName}}</div>
+            <div>Ranked #1, {{c.info.votes}} votes</div>
           </div>
         </ng-switch>
       </div>
