@@ -11,14 +11,17 @@ $(document).on('ready', function(){
 
   $('#mobile-menu .top-bar-section').click(function(e){
     $('#mobile-menu').toggleClass('expanded');
-      var reHeight = setInterval(function(){
+    //e.preventDefault();
+  });
+
+  $('body').on('click', 'a', function(){
+    var reHeight = setInterval(function(){
       if($('.company-box').width() > 0){
         console.log("reheight");
         clearInterval(reHeight);
         $('.company-box').css('height', $('.company-box').width()+15+'px');
       }
     }, 1000);
-    //e.preventDefault();
   });
 
   $(window).resize(function() {
