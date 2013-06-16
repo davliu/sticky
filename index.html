@@ -15,9 +15,9 @@
     <script type="text/javascript" src="https://api.intel.com:8081/js/v1/intel.cloudservices.js"></script>
   </head>
 
-  <body ng-controller="IndexCtrl">
+  <body>
 
-  <div id="main-menu">
+  <div id="main-menu" ng-controller="IndexCtrl">
 
     <h1 id="menu-logo">Sticky</h1>
     <ul class="side-nav">
@@ -27,7 +27,7 @@
       <li><a href="#/dashboard">Dashboard</a></li>
       <li><a href="#/company">Company</a></li>
       <li><a href="#/maps">Discover</a></li>
-      <a href="" ng-click="switchIdStatus()">Sign {{getIdStatus()}}</a>
+      <li><a href="" onclick="switchIdStatus()">Sign {{getIdStatus()}}</a></li>
     </ul>
 
   </div>
